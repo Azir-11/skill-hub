@@ -1,13 +1,6 @@
 import skillsData from "@/data/skills.json";
 
-export const CATEGORY_OPTIONS = [
-  "All",
-  "Prompt",
-  "UI-UX",
-  "CLI",
-  "Agent",
-  "Script",
-] as const;
+export const CATEGORY_OPTIONS = ["All", "Prompt", "UI-UX", "CLI", "Agent", "Script"] as const;
 
 export type Category = (typeof CATEGORY_OPTIONS)[number];
 export type SkillCategory = Exclude<Category, "All">;

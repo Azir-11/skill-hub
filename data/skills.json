@@ -10,12 +10,7 @@
     "stars": 182434,
     "updated_at": "2026-03-12T20:59:49Z",
     "recommendation_score": 78,
-    "tags": [
-      "自主代理",
-      "任务规划",
-      "工具调用",
-      "AI"
-    ]
+    "tags": ["自主代理", "任务规划", "工具调用", "AI"]
   },
   {
     "id": "2",
@@ -28,12 +23,7 @@
     "stars": 129353,
     "updated_at": "2026-03-13T13:45:07Z",
     "recommendation_score": 95,
-    "tags": [
-      "LLM",
-      "RAG",
-      "工作流",
-      "Python"
-    ]
+    "tags": ["LLM", "RAG", "工作流", "Python"]
   },
   {
     "id": "3",
@@ -46,12 +36,7 @@
     "stars": 71536,
     "updated_at": null,
     "recommendation_score": 91,
-    "tags": [
-      "提示工程",
-      "教程",
-      "推理",
-      "方法论"
-    ]
+    "tags": ["提示工程", "教程", "推理", "方法论"]
   },
   {
     "id": "4",
@@ -64,12 +49,7 @@
     "stars": 62680,
     "updated_at": null,
     "recommendation_score": 88,
-    "tags": [
-      "命令行",
-      "代码执行",
-      "本地助手",
-      "LLM"
-    ]
+    "tags": ["命令行", "代码执行", "本地助手", "LLM"]
   },
   {
     "id": "5",
@@ -82,12 +62,7 @@
     "stars": null,
     "updated_at": null,
     "recommendation_score": 90,
-    "tags": [
-      "界面生成",
-      "React",
-      "Tailwind",
-      "Vercel"
-    ]
+    "tags": ["界面生成", "React", "Tailwind", "Vercel"]
   },
   {
     "id": "6",
@@ -100,12 +75,7 @@
     "stars": 39708,
     "updated_at": "2026-03-09T16:02:19Z",
     "recommendation_score": 86,
-    "tags": [
-      "提示模板",
-      "工作流",
-      "CLI",
-      "知识处理"
-    ]
+    "tags": ["提示模板", "工作流", "CLI", "知识处理"]
   },
   {
     "id": "7",
@@ -118,12 +88,7 @@
     "stars": 45974,
     "updated_at": "2026-03-04T19:09:19Z",
     "recommendation_score": 93,
-    "tags": [
-      "多代理",
-      "协作",
-      "角色编排",
-      "自动化"
-    ]
+    "tags": ["多代理", "协作", "角色编排", "自动化"]
   },
   {
     "id": "8",
@@ -136,11 +101,6 @@
     "stars": 726,
     "updated_at": "2025-04-15T12:51:45Z",
     "recommendation_score": 72,
-    "tags": [
-      "命令行",
-      "OpenAI",
-      "开发效率",
-      "终端"
-    ]
+    "tags": ["命令行", "OpenAI", "开发效率", "终端"]
   }
 ]

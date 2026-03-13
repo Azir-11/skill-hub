@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "oxlint --tsconfig tsconfig.json .",
+    "lint:fix": "oxlint --tsconfig tsconfig.json --fix .",
+    "fmt": "oxfmt .",
+    "fmt:check": "oxfmt --check .",
+    "typecheck": "tsgo --project tsconfig.json --noEmit",
     "sync:skills": "node scripts/sync-skills.mjs"
   },
   "dependencies": {
@@ -26,9 +30,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "@typescript/native-preview": "^7.0.0-dev.20260313.1",
+    "oxfmt": "^0.40.0",
+    "oxlint": "^1.55.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

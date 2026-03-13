@@ -23,19 +23,11 @@ interface HeroProps {
   onCategoryChange: (category: Category) => void;
 }
 
-export function Hero({
-  searchQuery,
-  onSearchChange,
-  activeCategory,
-  onCategoryChange,
-}: HeroProps) {
+export function Hero({ searchQuery, onSearchChange, activeCategory, onCategoryChange }: HeroProps) {
   return (
     <section className="relative overflow-hidden py-12 px-4 text-center">
       {/* Background gradient */}
-      <div
-        className="pointer-events-none absolute inset-0 -z-10"
-        aria-hidden="true"
-      >
+      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div className="absolute left-1/2 top-0 -translate-x-1/2 h-150 w-225 rounded-full bg-linear-to-b from-violet-600/20 via-blue-600/10 to-transparent blur-3xl" />
       </div>
 
@@ -51,8 +43,10 @@ export function Hero({
 
         {/* 主标题文字 */}
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white relative z-10">
-          Curated AI <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 to-blue-400">Primitives.</span>
-
+          Curated AI{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-violet-400 to-blue-400">
+            Primitives.
+          </span>
         </h1>
       </div>
 

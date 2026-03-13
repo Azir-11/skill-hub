@@ -50,9 +50,7 @@ export function SkillCard({ skill }: SkillCardProps) {
             <Badge variant={getCategoryVariant(skill.category)}>
               {CATEGORY_LABELS[skill.category] ?? skill.category}
             </Badge>
-            <span className="text-xs font-mono text-muted-foreground/70">
-              {skill.version}
-            </span>
+            <span className="text-xs font-mono text-muted-foreground/70">{skill.version}</span>
           </div>
 
           {/* Name */}
@@ -86,9 +84,7 @@ export function SkillCard({ skill }: SkillCardProps) {
           <div className="flex w-full items-center justify-between text-xs text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-              <span className="font-medium text-foreground/80">
-                {formatStars(skill.stars)}
-              </span>
+              <span className="font-medium text-foreground/80">{formatStars(skill.stars)}</span>
               <span className="text-muted-foreground/60">星标</span>
             </span>
             <span className="flex items-center gap-1.5">

@@ -33,7 +33,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
         (s) =>
           s.name.toLowerCase().includes(query) ||
           s.description.toLowerCase().includes(query) ||
-          s.tags.some((tag) => tag.toLowerCase().includes(query))
+          s.tags.some((tag) => tag.toLowerCase().includes(query)),
       );
     }
 
@@ -70,9 +70,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
         {/* Results count */}
         <div className="mb-6 flex items-center justify-end">
           <p className="text-sm text-muted-foreground">
-            {filteredSkills.length === 0
-              ? "未找到技能"
-              : `${filteredSkills.length} Skills`}
+            {filteredSkills.length === 0 ? "未找到技能" : `${filteredSkills.length} Skills`}
           </p>
           {totalPages > 1 && (
             <p className="text-sm text-muted-foreground">
@@ -85,12 +83,8 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
         {filteredSkills.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-24 text-center">
             <div className="mb-4 text-5xl">🔍</div>
-            <h3 className="mb-2 text-xl font-semibold text-foreground">
-              未找到技能
-            </h3>
-            <p className="text-muted-foreground">
-              请尝试调整搜索词或分类条件。
-            </p>
+            <h3 className="mb-2 text-xl font-semibold text-foreground">未找到技能</h3>
+            <p className="text-muted-foreground">请尝试调整搜索词或分类条件。</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

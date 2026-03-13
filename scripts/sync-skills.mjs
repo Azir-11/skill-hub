@@ -47,9 +47,9 @@ async function requestGitHub(endpoint) {
 }
 
 const isGitHubApiRateLimitError = (error) =>
-  error instanceof Error
-  && error.message.includes("GitHub API 请求失败 403")
-  && error.message.toLowerCase().includes("rate limit exceeded");
+  error instanceof Error &&
+  error.message.includes("GitHub API 请求失败 403") &&
+  error.message.toLowerCase().includes("rate limit exceeded");
 
 const logRateLimitFallback = () => {
   if (hasLoggedRateLimitFallback) {
@@ -89,11 +89,7 @@ const parseStarCount = (value) => {
     return null;
   }
 
-  const normalized = value
-    .trim()
-    .toLowerCase()
-    .replace(/,/g, "")
-    .replace(/\s+/g, "");
+  const normalized = value.trim().toLowerCase().replace(/,/g, "").replace(/\s+/g, "");
 
   const match = normalized.match(/^(\d+(?:\.\d+)?)([km])?$/);
   if (!match) {
@@ -113,7 +109,7 @@ const parseStarCount = (value) => {
     default:
       return Math.round(base);
   }
-}
+};
 
 const extractRepoMetadataFromHtml = (html) => {
   const starPatterns = [
@@ -136,15 +132,16 @@ const extractRepoMetadataFromHtml = (html) => {
     }
   }
 
-  const updatedMatch = html.match(/datetime="([^"]+)"[^>]*data-view-component="true"/i)
-    ?? html.match(/<relative-time[^>]*datetime="([^"]+)"/i)
-    ?? html.match(/<time-ago[^>]*datetime="([^"]+)"/i);
+  const updatedMatch =
+    html.match(/datetime="([^"]+)"[^>]*data-view-component="true"/i) ??
+    html.match(/<relative-time[^>]*datetime="([^"]+)"/i) ??
+    html.match(/<time-ago[^>]*datetime="([^"]+)"/i);
 
   return {
     stars,
     updated_at: updatedMatch?.[1] ?? null,
   };
-}
+};
 
 async function fetchRepoMetadataFromWeb(ownerRepo) {
   const result = await requestGitHubText(`${GITHUB_WEB_BASE}/${ownerRepo}`);
@@ -158,12 +155,7 @@ async function fetchRepoMetadataFromWeb(ownerRepo) {
 const extractFirstAtomTagTitle = (xml) => {
   const entryMatch = xml.match(/<entry>[\s\S]*?<title>([^<]+)<\/title>/i);
   return entryMatch?.[1]?.trim() ?? null;
-}
-
-const extractFirstAtomUpdated = (xml) => {
-  const updatedMatch = xml.match(/<updated>([^<]+)<\/updated>/i);
-  return updatedMatch?.[1]?.trim() ?? null;
-}
+};
 
 async function resolveVersionFromWeb(ownerRepo, fallbackVersion) {
   const latestRelease = await requestGitHubText(`${GITHUB_WEB_BASE}/${ownerRepo}/releases/latest`);
@@ -191,8 +183,10 @@ async function fetchRepoMetadata(ownerRepo, skill) {
     }
 
     return {
-      stars: typeof repo.stargazers_count === "number" ? repo.stargazers_count : skill.stars ?? null,
-      updated_at: typeof repo.updated_at === "string" ? repo.updated_at : skill.updated_at ?? null,
+      stars:
+        typeof repo.stargazers_count === "number" ? repo.stargazers_count : (skill.stars ?? null),
+      updated_at:
+        typeof repo.updated_at === "string" ? repo.updated_at : (skill.updated_at ?? null),
     };
   } catch (error) {
     if (!isGitHubApiRateLimitError(error)) {

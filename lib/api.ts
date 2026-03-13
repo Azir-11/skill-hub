@@ -1,8 +1,4 @@
-import {
-  formatRelativeTime,
-  skills,
-  type Skill,
-} from "@/lib/skills";
+import { formatRelativeTime, skills, type Skill } from "@/lib/skills";
 
 export interface EnrichedSkill extends Skill {
   stars: number;
