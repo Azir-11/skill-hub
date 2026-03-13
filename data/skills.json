@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "AutoGPT",
+    "description": "An experimental open-source attempt to make GPT-4 fully autonomous. AutoGPT chains LLM 'thoughts' to autonomously achieve complex goals with minimal human interaction.",
+    "category": "Agent",
+    "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "version": "v0.5.0",
+    "tags": ["autonomous", "gpt-4", "agent", "ai"]
+  },
+  {
+    "id": "2",
+    "name": "LangChain",
+    "description": "A framework for developing applications powered by language models. Build context-aware, reasoning applications with LLMs via composable chains and agents.",
+    "category": "Script",
+    "github_url": "https://github.com/langchain-ai/langchain",
+    "version": "v0.3.0",
+    "tags": ["llm", "chains", "rag", "python"]
+  },
+  {
+    "id": "3",
+    "name": "Prompt Engineering Guide",
+    "description": "A comprehensive guide to prompt engineering techniques for large language models. Includes few-shot prompting, chain-of-thought, ReAct, and more.",
+    "category": "Prompt",
+    "github_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+    "version": "v1.0.0",
+    "tags": ["prompts", "guide", "cot", "few-shot"]
+  },
+  {
+    "id": "4",
+    "name": "OpenInterpreter",
+    "description": "A natural language interface for computers. Open Interpreter lets LLMs run code locally, enabling a terminal-like chat interface for file system and browser tasks.",
+    "category": "CLI",
+    "github_url": "https://github.com/OpenInterpreter/open-interpreter",
+    "version": "v0.3.5",
+    "tags": ["cli", "code-execution", "terminal", "llm"]
+  },
+  {
+    "id": "5",
+    "name": "v0 by Vercel",
+    "description": "AI-powered UI generation tool by Vercel. Generate production-ready React + Tailwind UI components from natural language descriptions with live preview.",
+    "category": "UI-UX",
+    "github_url": "https://github.com/vercel/v0",
+    "version": "v2.0.0",
+    "tags": ["ui", "react", "tailwind", "vercel"]
+  },
+  {
+    "id": "6",
+    "name": "Fabric",
+    "description": "An open-source framework for augmenting humans using AI. Fabric provides a collection of reusable prompt patterns and a CLI to integrate AI into your workflow.",
+    "category": "Prompt",
+    "github_url": "https://github.com/danielmiessler/fabric",
+    "version": "v1.4.0",
+    "tags": ["prompts", "patterns", "cli", "workflow"]
+  },
+  {
+    "id": "7",
+    "name": "Crew AI",
+    "description": "A framework for orchestrating role-playing, autonomous AI agents. CrewAI enables agents to collaborate and tackle complex tasks with defined roles and goals.",
+    "category": "Agent",
+    "github_url": "https://github.com/crewAIInc/crewAI",
+    "version": "v0.28.0",
+    "tags": ["multi-agent", "orchestration", "roles", "automation"]
+  },
+  {
+    "id": "8",
+    "name": "GPT CLI",
+    "description": "A simple yet powerful command-line interface for interacting with OpenAI GPT models. Supports streaming, context management, and plugin-based extensibility.",
+    "category": "CLI",
+    "github_url": "https://github.com/kharvd/gpt-cli",
+    "version": "v0.1.0",
+    "tags": ["cli", "gpt", "openai", "terminal"]
+  }
+]
