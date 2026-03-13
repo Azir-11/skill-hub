@@ -23,9 +23,9 @@
     "full_description": "适合测试提示质量、验证上下文设计，并比较不同 Agent 配置的实际产出效果。",
     "category": "Agent",
     "github_url": "https://github.com/NeoLabHQ/context-engineering-kit",
-    "version": null,
-    "stars": null,
-    "updated_at": null,
+    "version": "v2.1.1",
+    "stars": 632,
+    "updated_at": "2026-02-24T22:32:05Z",
     "recommendation_score": 88,
     "tags": [
       "Agent",
@@ -41,7 +41,7 @@
     "category": "Script",
     "github_url": "https://github.com/antfu/skills/tree/main/skills/antfu",
     "version": null,
-    "stars": null,
+    "stars": 4049,
     "updated_at": null,
     "recommendation_score": 87,
     "tags": [
@@ -58,7 +58,7 @@
     "category": "Script",
     "github_url": "https://github.com/supabase/agent-skills",
     "version": null,
-    "stars": null,
+    "stars": 1589,
     "updated_at": null,
     "recommendation_score": 85,
     "tags": [
