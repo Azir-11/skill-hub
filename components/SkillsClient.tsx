@@ -72,7 +72,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
           <p className="text-sm text-muted-foreground">
             {filteredSkills.length === 0
               ? "未找到技能"
-              : `${filteredSkills.length} 个 Skill`}
+              : `${filteredSkills.length} Skills`}
           </p>
           {totalPages > 1 && (
             <p className="text-sm text-muted-foreground">
@@ -122,8 +122,8 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
                 onClick={() => setCurrentPage(page)}
                 className={
                   currentPage === page
-                    ? "bg-violet-600 text-white hover:bg-violet-700 border-transparent min-w-[36px]"
-                    : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground min-w-[36px]"
+                    ? "bg-violet-600 text-white hover:bg-violet-700 border-transparent min-w-9"
+                    : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground min-w-9"
                 }
               >
                 {page}
