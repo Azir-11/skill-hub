@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Star, Clock, Tag } from "lucide-react";
+import { Star, Clock, Tag, Sparkles, ArrowUpRight } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import type { EnrichedSkill } from "@/lib/api";
+import { getSkillHref, isSelfSkill } from "@/lib/skills";
 
 type CategoryVariant = "prompt" | "ui-ux" | "cli" | "agent" | "script";
 const CATEGORY_LABELS: Record<string, string> = {
@@ -36,14 +37,23 @@ interface SkillCardProps {
 }
 
 export function SkillCard({ skill }: SkillCardProps) {
+  const href = getSkillHref(skill);
+  const isOfficial = isSelfSkill(skill);
+
   return (
     <Link
-      href={skill.github_url}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={href}
+      target={isOfficial ? undefined : "_blank"}
+      rel={isOfficial ? undefined : "noopener noreferrer"}
       className="group block h-full outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 rounded-xl"
     >
-      <Card className="h-full border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:border-violet-500/40 group-hover:bg-white/8 group-hover:shadow-xl group-hover:shadow-violet-500/10">
+      <Card
+        className={`h-full border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:border-violet-500/40 group-hover:bg-white/8 group-hover:shadow-xl group-hover:shadow-violet-500/10 ${
+          isOfficial
+            ? "border-cyan-400/20 bg-linear-to-br from-cyan-500/10 via-white/5 to-emerald-500/10 shadow-lg shadow-cyan-500/10"
+            : ""
+        }`}
+      >
         <CardContent className="flex flex-col gap-3 p-6">
           {/* Top: Category badge + Version */}
           <div className="flex items-center justify-between">
@@ -52,6 +62,19 @@ export function SkillCard({ skill }: SkillCardProps) {
             </Badge>
             <span className="text-xs font-mono text-muted-foreground/70">{skill.version}</span>
           </div>
+
+          {isOfficial && (
+            <div className="flex items-center justify-between gap-3">
+              <Badge
+                variant="outline"
+                className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200"
+              >
+                <Sparkles className="mr-1 h-3 w-3" />
+                本站提供
+              </Badge>
+              <span className="text-xs font-mono text-cyan-100/80">{`skills/${skill.name}`}</span>
+            </div>
+          )}
 
           {/* Name */}
           <h3 className="text-lg font-semibold text-foreground leading-tight group-hover:text-violet-300 transition-colors duration-200">
@@ -87,10 +110,17 @@ export function SkillCard({ skill }: SkillCardProps) {
               <span className="font-medium text-foreground/80">{formatStars(skill.stars)}</span>
               <span className="text-muted-foreground/60">星标</span>
             </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="h-3.5 w-3.5" />
-              {skill.updated_at}
-            </span>
+            {isOfficial ? (
+              <span className="flex items-center gap-1.5 text-cyan-200/90">
+                <ArrowUpRight className="h-3.5 w-3.5" />
+                查看仓库目录
+              </span>
+            ) : (
+              <span className="flex items-center gap-1.5">
+                <Clock className="h-3.5 w-3.5" />
+                {skill.updated_at}
+              </span>
+            )}
           </div>
         </CardFooter>
       </Card>
