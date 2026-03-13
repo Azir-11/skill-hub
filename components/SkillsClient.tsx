@@ -68,15 +68,15 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
 
       <main className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         {/* Results count */}
-        <div className="mb-6 flex items-center justify-between">
+        <div className="mb-6 flex items-center justify-end">
           <p className="text-sm text-muted-foreground">
             {filteredSkills.length === 0
-              ? "No skills found"
-              : `Showing ${paginatedSkills.length} of ${filteredSkills.length} skill${filteredSkills.length !== 1 ? "s" : ""}`}
+              ? "未找到技能"
+              : `${filteredSkills.length} 个 Skill`}
           </p>
           {totalPages > 1 && (
             <p className="text-sm text-muted-foreground">
-              Page {currentPage} of {totalPages}
+              第 {currentPage} / {totalPages} 页
             </p>
           )}
         </div>
@@ -86,10 +86,10 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
           <div className="flex flex-col items-center justify-center py-24 text-center">
             <div className="mb-4 text-5xl">🔍</div>
             <h3 className="mb-2 text-xl font-semibold text-foreground">
-              No skills found
+              未找到技能
             </h3>
             <p className="text-muted-foreground">
-              Try adjusting your search or filter criteria.
+              请尝试调整搜索词或分类条件。
             </p>
           </div>
         ) : (
@@ -109,7 +109,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
               className="border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground disabled:opacity-30"
-              aria-label="Previous page"
+              aria-label="上一页"
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
@@ -136,7 +136,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
               className="border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground disabled:opacity-30"
-              aria-label="Next page"
+              aria-label="下一页"
             >
               <ChevronRight className="h-4 w-4" />
             </Button>

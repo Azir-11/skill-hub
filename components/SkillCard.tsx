@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import type { EnrichedSkill } from "@/lib/api";
 
 type CategoryVariant = "prompt" | "ui-ux" | "cli" | "agent" | "script";
+const CATEGORY_LABELS: Record<string, string> = {
+  Prompt: "提示词",
+  "UI-UX": "界面设计",
+  CLI: "命令行",
+  Agent: "智能体",
+  Script: "脚本",
+};
 
 function getCategoryVariant(category: string): CategoryVariant {
   const map: Record<string, CategoryVariant> = {
@@ -41,7 +48,7 @@ export function SkillCard({ skill }: SkillCardProps) {
           {/* Top: Category badge + Version */}
           <div className="flex items-center justify-between">
             <Badge variant={getCategoryVariant(skill.category)}>
-              {skill.category}
+              {CATEGORY_LABELS[skill.category] ?? skill.category}
             </Badge>
             <span className="text-xs font-mono text-muted-foreground/70">
               {skill.version}
@@ -82,7 +89,7 @@ export function SkillCard({ skill }: SkillCardProps) {
               <span className="font-medium text-foreground/80">
                 {formatStars(skill.stars)}
               </span>
-              <span className="text-muted-foreground/60">stars</span>
+              <span className="text-muted-foreground/60">星标</span>
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" />

@@ -2,73 +2,145 @@
   {
     "id": "1",
     "name": "AutoGPT",
-    "description": "An experimental open-source attempt to make GPT-4 fully autonomous. AutoGPT chains LLM 'thoughts' to autonomously achieve complex goals with minimal human interaction.",
+    "description": "面向自主执行场景的开源 AI Agent 框架，适合探索多步骤任务自动化。",
+    "full_description": "AutoGPT 是早期具有代表性的自主式 Agent 项目之一，核心目标是让模型围绕一个高层目标持续拆解任务、生成计划并执行。它更适合用于理解 Agent 工作流、任务编排和自动化链路，而不是直接作为生产级框架。对于希望研究自治代理、记忆机制和工具调用模式的开发者，它仍然有不错的参考价值。",
     "category": "Agent",
     "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
     "version": "v0.5.0",
-    "tags": ["autonomous", "gpt-4", "agent", "ai"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 78,
+    "tags": [
+      "自主代理",
+      "任务规划",
+      "工具调用",
+      "AI"
+    ]
   },
   {
     "id": "2",
     "name": "LangChain",
-    "description": "A framework for developing applications powered by language models. Build context-aware, reasoning applications with LLMs via composable chains and agents.",
+    "description": "构建 LLM 应用的主流框架，覆盖链式调用、Agent、RAG 与上下文编排。",
+    "full_description": "LangChain 提供了一套较完整的语言模型应用开发抽象，包括提示词模板、文档加载、检索增强生成、工具调用、Agent 编排以及多种模型供应商接入。它生态成熟、资料丰富，适合需要快速搭建复杂 LLM 应用的团队。缺点是概念层较多，升级时需要关注 API 演进，但在中文开发者社区中仍然具备较高的参考和实践价值。",
     "category": "Script",
     "github_url": "https://github.com/langchain-ai/langchain",
     "version": "v0.3.0",
-    "tags": ["llm", "chains", "rag", "python"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 95,
+    "tags": [
+      "LLM",
+      "RAG",
+      "工作流",
+      "Python"
+    ]
   },
   {
     "id": "3",
     "name": "Prompt Engineering Guide",
-    "description": "A comprehensive guide to prompt engineering techniques for large language models. Includes few-shot prompting, chain-of-thought, ReAct, and more.",
+    "description": "系统化整理提示工程方法论的指南仓库，适合入门与团队培训。",
+    "full_description": "Prompt Engineering Guide 收录了从基础提示技巧到高级推理策略的大量示例，覆盖 few-shot、chain-of-thought、ReAct、评估方法等主题。它更像一份知识库和教学材料，而不是代码框架。对于需要沉淀团队提示工程规范、做内部分享或者快速查阅经典模式的用户，这个项目非常实用。",
     "category": "Prompt",
     "github_url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
     "version": "v1.0.0",
-    "tags": ["prompts", "guide", "cot", "few-shot"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "提示工程",
+      "教程",
+      "推理",
+      "方法论"
+    ]
   },
   {
     "id": "4",
     "name": "OpenInterpreter",
-    "description": "A natural language interface for computers. Open Interpreter lets LLMs run code locally, enabling a terminal-like chat interface for file system and browser tasks.",
+    "description": "让模型以自然语言驱动本地终端与文件系统，适合个人自动化助手场景。",
+    "full_description": "OpenInterpreter 将大模型能力与本地执行环境结合起来，用户可以通过自然语言触发代码执行、文件读写和命令行操作。这种交互方式非常适合个人效率工具、原型验证和受控环境下的自动化任务。它的价值在于把“会说话的模型”推进到“能动手的助手”，但也需要明确安全边界与执行权限设计。",
     "category": "CLI",
     "github_url": "https://github.com/OpenInterpreter/open-interpreter",
     "version": "v0.3.5",
-    "tags": ["cli", "code-execution", "terminal", "llm"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "命令行",
+      "代码执行",
+      "本地助手",
+      "LLM"
+    ]
   },
   {
     "id": "5",
     "name": "v0 by Vercel",
-    "description": "AI-powered UI generation tool by Vercel. Generate production-ready React + Tailwind UI components from natural language descriptions with live preview.",
+    "description": "偏向产品原型和前端生成的 AI UI 工具，适合快速产出界面草案。",
+    "full_description": "v0 以自然语言生成 React 与 Tailwind 界面为核心卖点，特别适合在早期原型、活动页面和组件探索阶段快速形成可运行界面。对于前端团队来说，它可以作为设计到实现之间的过渡工具，用于验证信息结构、版式和视觉方向。它并不代替完整设计系统，但在效率和启发性上非常强。",
     "category": "UI-UX",
     "github_url": "https://github.com/vercel/v0",
     "version": "v2.0.0",
-    "tags": ["ui", "react", "tailwind", "vercel"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 90,
+    "tags": [
+      "界面生成",
+      "React",
+      "Tailwind",
+      "Vercel"
+    ]
   },
   {
     "id": "6",
     "name": "Fabric",
-    "description": "An open-source framework for augmenting humans using AI. Fabric provides a collection of reusable prompt patterns and a CLI to integrate AI into your workflow.",
+    "description": "聚焦提示模板与工作流复用的项目，适合沉淀高频 AI 任务模式。",
+    "full_description": "Fabric 提供一组可复用的 prompt pattern，目标是把常见 AI 任务沉淀为可以直接调用的工作流模板。它特别适合内容处理、信息提炼、知识转译等高频任务场景。相比通用框架，Fabric 的优势在于轻量、易理解、可快速上手，也适合团队内部二次整理成自己的提示资产库。",
     "category": "Prompt",
     "github_url": "https://github.com/danielmiessler/fabric",
     "version": "v1.4.0",
-    "tags": ["prompts", "patterns", "cli", "workflow"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "提示模板",
+      "工作流",
+      "CLI",
+      "知识处理"
+    ]
   },
   {
     "id": "7",
-    "name": "Crew AI",
-    "description": "A framework for orchestrating role-playing, autonomous AI agents. CrewAI enables agents to collaborate and tackle complex tasks with defined roles and goals.",
+    "name": "CrewAI",
+    "description": "面向多 Agent 协作的框架，适合角色分工与任务编排类场景。",
+    "full_description": "CrewAI 强调多角色代理之间的协作机制，例如规划者、执行者、审阅者等角色分离，适用于需要拆分职责和串联步骤的复杂任务。它的抽象对业务流程化和多智能体实验非常友好，适合需要尝试多 Agent 编排、自动化运营或复杂流程助手的团队。对于关注协作模式而非底层细节的项目来说，它是一个很有代表性的选择。",
     "category": "Agent",
     "github_url": "https://github.com/crewAIInc/crewAI",
     "version": "v0.28.0",
-    "tags": ["multi-agent", "orchestration", "roles", "automation"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 93,
+    "tags": [
+      "多代理",
+      "协作",
+      "角色编排",
+      "自动化"
+    ]
   },
   {
     "id": "8",
     "name": "GPT CLI",
-    "description": "A simple yet powerful command-line interface for interacting with OpenAI GPT models. Supports streaming, context management, and plugin-based extensibility.",
+    "description": "轻量命令行交互工具，适合偏终端工作流的 OpenAI 模型调用场景。",
+    "full_description": "GPT CLI 这类工具通常强调在终端中快速调用模型、管理上下文并结合本地开发流程使用。它适合开发者把问答、翻译、文本生成和简单脚本辅助直接嵌入日常命令行工作流中。对于不想频繁切换 Web 界面的用户，这类 CLI 项目具备很高的实用性，但具体能力强弱取决于插件机制和上下文管理设计。",
     "category": "CLI",
     "github_url": "https://github.com/kharvd/gpt-cli",
     "version": "v0.1.0",
-    "tags": ["cli", "gpt", "openai", "terminal"]
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 72,
+    "tags": [
+      "命令行",
+      "OpenAI",
+      "开发效率",
+      "终端"
+    ]
   }
 ]
