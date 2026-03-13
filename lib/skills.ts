@@ -26,6 +26,17 @@ export interface EnrichedSkill extends Skill {
 
 export const skills = skillsData as Skill[];
 
+export const SELF_REPO_BASE_URL = "https://github.com/Azir-11/skill-hub/tree/main/data/skills";
+
+export const isSelfSkill = (skill: Pick<Skill, "github_url">) => skill.github_url === "self";
+
+export const findSelfSkillByName = (name: string) =>
+  skills.find((skill) => skill.name === name && isSelfSkill(skill));
+
+export const getSelfSkillRepoUrl = (name: string) => `${SELF_REPO_BASE_URL}/${name}`;
+
+export const getSkillHref = (skill: Skill) => (isSelfSkill(skill) ? `/skills/${skill.name}` : skill.github_url);
+
 export const categoryLabels: Record<Category, string> = {
   All: "全部",
   Prompt: "提示词",
