@@ -5,18 +5,40 @@ import process from "node:process";
 const DATA_PATH = path.join(process.cwd(), "data", "skills.json");
 const GITHUB_API_BASE = "https://api.github.com";
 const GITHUB_WEB_BASE = "https://github.com";
+const SELF_REPO = "Azir-11/skill-hub";
+const SELF_REPO_BRANCH = "main";
+const SELF_SKILL_PATH_PREFIX = "data/skills";
 
 let hasLoggedRateLimitFallback = false;
 
-function extractOwnerRepo(githubUrl) {
+function extractGitHubTarget(skill) {
+  if (skill.github_url === "self") {
+    const skillPath = `${SELF_SKILL_PATH_PREFIX}/${skill.name}`;
+    return {
+      ownerRepo: SELF_REPO,
+      ref: SELF_REPO_BRANCH,
+      path: skillPath,
+      webUrl: `${GITHUB_WEB_BASE}/${SELF_REPO}/tree/${SELF_REPO_BRANCH}/${skillPath}`,
+    };
+  }
+
   try {
-    const url = new URL(githubUrl);
-    const parts = url.pathname.split("/").filter(Boolean);
+    const url = new URL(skill.github_url);
+    const parts = url.pathname.split("/").filter(Boolean).map((part) => decodeURIComponent(part));
     if (parts.length < 2) {
       return null;
     }
 
-    return `${parts[0]}/${parts[1]}`;
+    const ownerRepo = `${parts[0]}/${parts[1]}`;
+    const ref = parts[2] === "tree" && parts[3] ? parts[3] : null;
+    const directoryPath = parts[2] === "tree" && parts.length > 4 ? parts.slice(4).join("/") : null;
+
+    return {
+      ownerRepo,
+      ref,
+      path: directoryPath,
+      webUrl: skill.github_url,
+    };
   } catch {
     return null;
   }
@@ -57,7 +79,7 @@ const logRateLimitFallback = () => {
   }
 
   hasLoggedRateLimitFallback = true;
-  process.stderr.write("GitHub API 已触发限流，后续改用 GitHub 页面和 Atom feed 回退。\n");
+  process.stderr.write("GitHub API 已触发限流，后续改用 GitHub 页面回退。\n");
 };
 
 async function requestGitHubText(url) {
@@ -152,27 +174,32 @@ async function fetchRepoMetadataFromWeb(ownerRepo) {
   return extractRepoMetadataFromHtml(result.body);
 }
 
-const extractFirstAtomTagTitle = (xml) => {
-  const entryMatch = xml.match(/<entry>[\s\S]*?<title>([^<]+)<\/title>/i);
-  return entryMatch?.[1]?.trim() ?? null;
+const extractCommitMetadataFromHtml = (html) => {
+  const shortShaMatch =
+    html.match(/href="\/[^"/]+\/[^"/]+\/commit\/([0-9a-f]{7,40})"/i) ??
+    html.match(/data-testid="commit-oid"[^>]*>\s*([0-9a-f]{7,40})\s*</i);
+  const committedAtMatch =
+    html.match(/<relative-time[^>]*datetime="([^"]+)"/i) ??
+    html.match(/<time-ago[^>]*datetime="([^"]+)"/i) ??
+    html.match(/datetime="([^"]+)"[^>]*data-view-component="true"/i);
+
+  return {
+    version: shortShaMatch?.[1]?.slice(0, 7) ?? null,
+    updated_at: committedAtMatch?.[1] ?? null,
+  };
 };
 
-async function resolveVersionFromWeb(ownerRepo, fallbackVersion) {
-  const latestRelease = await requestGitHubText(`${GITHUB_WEB_BASE}/${ownerRepo}/releases/latest`);
-  if (latestRelease) {
-    const tagMatch = latestRelease.url.match(/\/releases\/tag\/([^/?#]+)/i);
-    if (tagMatch?.[1]) {
-      return decodeURIComponent(tagMatch[1]);
-    }
+async function fetchCommitMetadataFromWeb(target, fallback) {
+  const result = await requestGitHubText(target.webUrl ?? `${GITHUB_WEB_BASE}/${target.ownerRepo}`);
+  if (!result) {
+    return fallback;
   }
 
-  const tagsFeed = await requestGitHubText(`${GITHUB_WEB_BASE}/${ownerRepo}/tags.atom`);
-  const tagName = tagsFeed ? extractFirstAtomTagTitle(tagsFeed.body) : null;
-  if (tagName) {
-    return tagName;
-  }
-
-  return fallbackVersion ?? null;
+  const commit = extractCommitMetadataFromHtml(result.body);
+  return {
+    version: commit.version ?? fallback.version ?? null,
+    updated_at: commit.updated_at ?? fallback.updated_at ?? null,
+  };
 }
 
 async function fetchRepoMetadata(ownerRepo, skill) {
@@ -202,47 +229,65 @@ async function fetchRepoMetadata(ownerRepo, skill) {
   }
 }
 
-async function resolveVersion(ownerRepo, fallbackVersion) {
+async function fetchLatestCommitMetadata(target, skill) {
+  const params = new URLSearchParams({ per_page: "1" });
+  if (target.ref) {
+    params.set("sha", target.ref);
+  }
+  if (target.path) {
+    params.set("path", target.path);
+  }
+
   try {
-    const release = await requestGitHub(`/repos/${ownerRepo}/releases/latest`);
-    if (release?.tag_name) {
-      return release.tag_name;
+    const commits = await requestGitHub(`/repos/${target.ownerRepo}/commits?${params.toString()}`);
+    const latestCommit = Array.isArray(commits) ? commits[0] : null;
+    if (!latestCommit) {
+      return {
+        version: skill.version ?? null,
+        updated_at: skill.updated_at ?? null,
+      };
     }
 
-    const tags = await requestGitHub(`/repos/${ownerRepo}/tags?per_page=1`);
-    if (Array.isArray(tags) && tags[0]?.name) {
-      return tags[0].name;
-    }
+    return {
+      version:
+        typeof latestCommit.sha === "string" ? latestCommit.sha.slice(0, 7) : (skill.version ?? null),
+      updated_at:
+        latestCommit.commit?.author?.date ??
+        latestCommit.commit?.committer?.date ??
+        skill.updated_at ??
+        null,
+    };
   } catch (error) {
     if (!isGitHubApiRateLimitError(error)) {
       throw error;
     }
 
     logRateLimitFallback();
-    return resolveVersionFromWeb(ownerRepo, fallbackVersion);
+    return fetchCommitMetadataFromWeb(target, {
+      version: skill.version ?? null,
+      updated_at: skill.updated_at ?? null,
+    });
   }
-
-  return fallbackVersion ?? null;
 }
 
 async function syncSkill(skill) {
-  const ownerRepo = extractOwnerRepo(skill.github_url);
-  if (!ownerRepo) {
+  const target = extractGitHubTarget(skill);
+  if (!target) {
     return skill;
   }
 
-  const repo = await fetchRepoMetadata(ownerRepo, skill);
+  const repo = await fetchRepoMetadata(target.ownerRepo, skill);
   if (!repo) {
     return skill;
   }
 
-  const version = await resolveVersion(ownerRepo, skill.version);
+  const latestCommit = await fetchLatestCommitMetadata(target, skill);
 
   return {
     ...skill,
-    version,
+    version: latestCommit.version,
     stars: repo.stars,
-    updated_at: repo.updated_at,
+    updated_at: latestCommit.updated_at ?? repo.updated_at,
   };
 }
 
