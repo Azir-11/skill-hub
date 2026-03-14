@@ -32,6 +32,23 @@ function formatStars(count: number): string {
   return count.toString();
 }
 
+function getSourceLabel(isOfficial: boolean): string {
+  return isOfficial ? "本站提供" : "社区收录";
+}
+
+function getSourceDetail(skill: EnrichedSkill, isOfficial: boolean): string {
+  if (isOfficial) {
+    return `skills/${skill.name}`;
+  }
+
+  try {
+    const { hostname } = new URL(skill.github_url);
+    return hostname.replace(/^www\./, "");
+  } catch {
+    return "外部仓库";
+  }
+}
+
 interface SkillCardProps {
   skill: EnrichedSkill;
 }
@@ -39,60 +56,65 @@ interface SkillCardProps {
 export function SkillCard({ skill }: SkillCardProps) {
   const href = getSkillHref(skill);
   const isOfficial = isSelfSkill(skill);
+  const detailText = skill.full_description || skill.description;
 
   return (
     <Link
       href={href}
-      target={isOfficial ? undefined : "_blank"}
-      rel={isOfficial ? undefined : "noopener noreferrer"}
-      className="group block h-full outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 rounded-xl"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative block h-full cursor-pointer rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2"
     >
       <Card
-        className={`h-full border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:border-violet-500/40 group-hover:bg-white/8 group-hover:shadow-xl group-hover:shadow-violet-500/10 ${
-          isOfficial
-            ? "border-cyan-400/20 bg-linear-to-br from-cyan-500/10 via-white/5 to-emerald-500/10 shadow-lg shadow-cyan-500/10"
-            : ""
-        }`}
+        className={`relative flex h-full flex-col overflow-hidden border border-white/10 bg-white/4.5 backdrop-blur-sm transition-[border-color,background-color,box-shadow] duration-250 group-hover:border-white/18 group-hover:bg-white/6 group-hover:shadow-xl group-hover:shadow-black/15 ${isOfficial
+          ? "border-cyan-400/20 bg-linear-to-br from-cyan-500/10 via-white/4.5 to-emerald-500/10 shadow-lg shadow-cyan-950/20"
+          : ""
+          }`}
       >
-        <CardContent className="flex flex-col gap-3 p-6">
-          {/* Top: Category badge + Version */}
-          <div className="flex items-center justify-between">
+        <CardContent className="flex flex-1 flex-col p-6">
+          <div className="flex items-center justify-between gap-4">
             <Badge variant={getCategoryVariant(skill.category)}>
               {CATEGORY_LABELS[skill.category] ?? skill.category}
             </Badge>
             <span className="text-xs font-mono text-muted-foreground/70">{skill.version}</span>
           </div>
 
-          {isOfficial && (
-            <div className="flex items-center justify-between gap-3">
-              <Badge
-                variant="outline"
-                className="border-cyan-400/30 bg-cyan-400/10 text-cyan-200"
-              >
-                <Sparkles className="mr-1 h-3 w-3" />
-                本站提供
-              </Badge>
-              <span className="text-xs font-mono text-cyan-100/80">{`skills/${skill.name}`}</span>
-            </div>
-          )}
+          <div className="mt-4 flex items-center justify-between gap-3 text-[11px]">
+            <span
+              className={
+                isOfficial
+                  ? "inline-flex items-center gap-1.5 text-cyan-200/85"
+                  : "inline-flex items-center gap-1.5 text-muted-foreground/72"
+              }
+            >
+              {isOfficial && <Sparkles className="h-3 w-3" />}
+              {getSourceLabel(isOfficial)}
+            </span>
+            <span
+              className={
+                isOfficial
+                  ? "font-mono text-cyan-100/75"
+                  : "font-mono text-muted-foreground/65"
+              }
+            >
+              {getSourceDetail(skill, isOfficial)}
+            </span>
+          </div>
 
-          {/* Name */}
-          <h3 className="text-lg font-semibold text-foreground leading-tight group-hover:text-violet-300 transition-colors duration-200">
+          <h3 className="mt-5 text-[1.95rem] leading-none font-semibold tracking-[-0.035em] text-foreground sm:text-[2.1rem]">
             {skill.name}
           </h3>
 
-          {/* Description */}
-          <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+          <p className="mt-4 min-h-13 text-sm leading-relaxed text-muted-foreground line-clamp-2">
             {skill.description}
           </p>
 
-          {/* Tags */}
           {skill.tags.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mt-1">
+            <div className="mt-5 flex flex-wrap gap-1.5">
               {skill.tags.slice(0, 4).map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-1 rounded-md bg-white/5 px-2 py-0.5 text-xs text-muted-foreground/80 border border-white/8"
+                  className="inline-flex items-center gap-1 rounded-md border border-white/8 bg-white/5 px-2 py-1 text-xs text-muted-foreground/80"
                 >
                   <Tag className="h-2.5 w-2.5" />
                   {tag}
@@ -102,9 +124,8 @@ export function SkillCard({ skill }: SkillCardProps) {
           )}
         </CardContent>
 
-        {/* Footer: Stars + Last updated */}
         <CardFooter className="px-6 pb-5 pt-0">
-          <div className="flex w-full items-center justify-between text-xs text-muted-foreground">
+          <div className="flex w-full items-center justify-between gap-4 border-t border-white/6 pt-5 text-xs text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
               <span className="font-medium text-foreground/80">{formatStars(skill.stars)}</span>
@@ -124,6 +145,10 @@ export function SkillCard({ skill }: SkillCardProps) {
           </div>
         </CardFooter>
       </Card>
+
+      <div className="pointer-events-none absolute inset-x-5 top-full z-30 mt-3 origin-top rounded-2xl border border-white/10 bg-black/88 px-4 py-3 opacity-0 shadow-2xl shadow-black/35 backdrop-blur-md transition-[opacity,transform] duration-200 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100 translate-y-1">
+        <p className="text-sm leading-6 text-slate-100">{detailText}</p>
+      </div>
     </Link>
   );
 }
