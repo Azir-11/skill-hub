@@ -185,5 +185,90 @@
       "Markdown",
       "RAG"
     ]
+  },
+  {
+    "id": "20260316040001",
+    "name": "react-best-practices",
+    "description": "可直接落地的生产级 React 应用架构与工程规范。",
+    "full_description": "提炼自 bulletproof-react 项目。覆盖目录结构、组件边界划分、状态管理选型、数据请求封装、性能优化和测试策略，帮助团队在大型 React 项目中建立统一的工程规范，避免常见的架构债务。",
+    "category": "Script",
+    "github_url": "https://github.com/alan2207/bulletproof-react",
+    "version": null,
+    "stars": 29200,
+    "updated_at": null,
+    "recommendation_score": 92,
+    "tags": [
+      "React",
+      "项目架构",
+      "最佳实践"
+    ]
+  },
+  {
+    "id": "20260316040002",
+    "name": "vue3-composables",
+    "description": "Vue 3 组合式函数的设计规范与可复用模式集合。",
+    "full_description": "基于 VueUse 项目的工程实践：如何正确封装副作用、处理响应式数据的生命周期，以及在多个组件间共享逻辑而不引入隐式耦合。是 Vue 3 项目中统一 Composable 编写规范的最佳参考。",
+    "category": "Script",
+    "github_url": "https://github.com/vueuse/vueuse",
+    "version": null,
+    "stars": 21400,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "Vue",
+      "Composables",
+      "响应式"
+    ]
+  },
+  {
+    "id": "20260316040003",
+    "name": "vite-config-guide",
+    "description": "Vite 构建工具的配置精要与性能调优指南。",
+    "full_description": "聚焦 Vite 实际项目配置中的高频问题：环境变量管理、路径别名、按需加载、代码分割策略以及生产构建的 Rollup 选项调优。帮助开发者充分利用 Vite 的原生 ESM 优势，消除不必要的构建耗时。",
+    "category": "Script",
+    "github_url": "https://github.com/vitejs/vite",
+    "version": null,
+    "stars": 69000,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "Vite",
+      "构建优化",
+      "开发体验"
+    ]
+  },
+  {
+    "id": "20260316040004",
+    "name": "clean-code-javascript",
+    "description": "将 Clean Code 原则具体落地到 JavaScript/TypeScript 的编码规范。",
+    "full_description": "将 Robert C. Martin《代码整洁之道》的核心原则逐条翻译成可执行的 JS/TS 代码示例。覆盖命名、函数设计、注释、并发和错误处理，是前端团队建立代码审查标准的权威参考，在 GitHub 上获得超过 9 万星。",
+    "category": "Script",
+    "github_url": "https://github.com/ryanmcdermott/clean-code-javascript",
+    "version": null,
+    "stars": 92000,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "Clean Code",
+      "编码规范",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "20260316040005",
+    "name": "javascript-design-patterns",
+    "description": "面向现代前端的 JavaScript 设计模式与架构模式精讲。",
+    "full_description": "Addy Osmani 的开源书籍《Learning JavaScript Design Patterns》最新版，全面覆盖经典 GoF 模式在 JS/TS 中的实现，以及 React 和 Vue 生态中常见的渲染模式、状态模式和性能模式。是提升前端编码设计能力的必读资料。",
+    "category": "Script",
+    "github_url": "https://github.com/addyosmani/learning-javascript-design-patterns",
+    "version": null,
+    "stars": 21300,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "设计模式",
+      "JavaScript",
+      "架构"
+    ]
   }
 ]
