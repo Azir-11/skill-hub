@@ -18,13 +18,28 @@ interface SkillsClientProps {
 export function SkillsClient({ initialSkills }: SkillsClientProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<Category>("All");
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const allTags = useMemo(() => {
+    const tagSet = new Set<string>();
+    for (const skill of initialSkills) {
+      for (const tag of skill.tags) {
+        tagSet.add(tag);
+      }
+    }
+    return Array.from(tagSet).sort((a, b) => a.localeCompare(b, "zh-CN"));
+  }, [initialSkills]);
 
   const filteredSkills = useMemo(() => {
     let result = initialSkills;
 
     if (activeCategory !== "All") {
       result = result.filter((s) => s.category === activeCategory);
+    }
+
+    if (selectedTags.length > 0) {
+      result = result.filter((s) => selectedTags.some((tag) => s.tags.includes(tag)));
     }
 
     if (searchQuery.trim()) {
@@ -38,7 +53,7 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
     }
 
     return result;
-  }, [initialSkills, activeCategory, searchQuery]);
+  }, [initialSkills, activeCategory, selectedTags, searchQuery]);
 
   const totalPages = Math.max(1, Math.ceil(filteredSkills.length / ITEMS_PER_PAGE));
 
@@ -57,6 +72,11 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
     setCurrentPage(1);
   }
 
+  function handleTagToggle(tag: string) {
+    setSelectedTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]));
+    setCurrentPage(1);
+  }
+
   return (
     <>
       <Hero
@@ -64,6 +84,9 @@ export function SkillsClient({ initialSkills }: SkillsClientProps) {
         onSearchChange={handleSearchChange}
         activeCategory={activeCategory}
         onCategoryChange={handleCategoryChange}
+        allTags={allTags}
+        selectedTags={selectedTags}
+        onTagToggle={handleTagToggle}
       />
 
       <main className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
