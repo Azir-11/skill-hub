@@ -13,7 +13,7 @@
     "tags": [
       "无障碍",
       "WCAG",
-      "审查"
+      "A11y"
     ]
   },
   {
@@ -28,9 +28,9 @@
     "updated_at": "2026-03-13T10:24:15Z",
     "recommendation_score": 88,
     "tags": [
-      "Agent",
-      "评估",
-      "提示优化"
+      "多代理",
+      "上下文工程",
+      "Agent 框架"
     ]
   },
   {
@@ -45,9 +45,9 @@
     "updated_at": "2026-02-03T06:26:01Z",
     "recommendation_score": 87,
     "tags": [
-      "前端工程",
+      "代码风格",
       "TypeScript",
-      "约定式"
+      "前端规范"
     ]
   },
   {
@@ -63,8 +63,8 @@
     "recommendation_score": 85,
     "tags": [
       "Supabase",
-      "Postgres",
-      "性能"
+      "PostgreSQL",
+      "数据库优化"
     ]
   },
   {
@@ -79,7 +79,7 @@
     "updated_at": "2026-03-10T00:27:01Z",
     "recommendation_score": 91,
     "tags": [
-      "提示词",
+      "提示词生成",
       "Meta Prompt",
       "Anthropic"
     ]
@@ -96,9 +96,9 @@
     "updated_at": "2023-03-20T04:13:44Z",
     "recommendation_score": 88,
     "tags": [
-      "代码仓库",
+      "代码库打包",
       "长上下文",
-      "Prompt"
+      "LLM 输入"
     ]
   },
   {
@@ -113,9 +113,9 @@
     "updated_at": "2025-09-30T08:07:44Z",
     "recommendation_score": 86,
     "tags": [
-      "教育",
+      "AI 导师",
       "System Prompt",
-      "个性化"
+      "个性化学习"
     ]
   },
   {
@@ -131,7 +131,7 @@
     "recommendation_score": 87,
     "tags": [
       "Git",
-      "Commit",
+      "Commit 规范",
       "CLI"
     ]
   },
@@ -147,9 +147,9 @@
     "updated_at": null,
     "recommendation_score": 82,
     "tags": [
-      "README",
+      "README 生成",
       "技术文档",
-      "开发者写作"
+      "文档工程"
     ]
   },
   {
@@ -164,9 +164,9 @@
     "updated_at": "2026-03-12T21:07:01Z",
     "recommendation_score": 89,
     "tags": [
+      "截图转代码",
       "Shadcn UI",
-      "React",
-      "Tailwind"
+      "React"
     ]
   },
   {
@@ -182,7 +182,7 @@
     "recommendation_score": 90,
     "tags": [
       "网页抓取",
-      "Markdown",
+      "内容提取",
       "RAG"
     ]
   },
@@ -200,7 +200,7 @@
     "tags": [
       "React",
       "项目架构",
-      "最佳实践"
+      "工程规范"
     ]
   },
   {
@@ -215,9 +215,9 @@
     "updated_at": null,
     "recommendation_score": 88,
     "tags": [
-      "Vue",
+      "Vue 3",
       "Composables",
-      "响应式"
+      "响应式编程"
     ]
   },
   {
@@ -233,8 +233,8 @@
     "recommendation_score": 87,
     "tags": [
       "Vite",
-      "构建优化",
-      "开发体验"
+      "构建配置",
+      "性能调优"
     ]
   },
   {
@@ -250,7 +250,7 @@
     "recommendation_score": 91,
     "tags": [
       "Clean Code",
-      "编码规范",
+      "代码规范",
       "JavaScript"
     ]
   },
@@ -268,7 +268,7 @@
     "tags": [
       "设计模式",
       "JavaScript",
-      "架构"
+      "前端架构"
     ]
   }
 ]

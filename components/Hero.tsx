@@ -5,11 +5,9 @@ import { Search, ChevronDown, ChevronUp, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { CATEGORY_OPTIONS, categoryLabels } from "@/lib/skills";
+import type { Category } from "@/lib/skills";
 
-const CATEGORIES = CATEGORY_OPTIONS;
 const TAGS_INITIAL_COUNT = 12;
-
-type Category = (typeof CATEGORIES)[number];
 
 interface HeroProps {
   searchQuery: string;
@@ -81,7 +79,7 @@ export function Hero({
 
       {/* Category filters */}
       <div className="flex flex-wrap justify-center gap-2">
-        {CATEGORIES.map((category) => (
+        {CATEGORY_OPTIONS.map((category) => (
           <Button
             key={category}
             variant={activeCategory === category ? "default" : "outline"}
