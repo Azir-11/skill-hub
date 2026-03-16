@@ -1,18 +1,13 @@
 "use client";
 
-import { Search } from "lucide-react";
+import { useState } from "react";
+import { Search, ChevronDown, ChevronUp, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { CATEGORY_OPTIONS, categoryLabels } from "@/lib/skills";
 
-const CATEGORIES = ["All", "Prompt", "UI-UX", "CLI", "Agent", "Script"] as const;
-const CATEGORY_LABELS: Record<Category, string> = {
-  All: "全部",
-  Prompt: "提示词",
-  "UI-UX": "界面设计",
-  CLI: "命令行",
-  Agent: "智能体",
-  Script: "脚本",
-};
+const CATEGORIES = CATEGORY_OPTIONS;
+const TAGS_INITIAL_COUNT = 12;
 
 type Category = (typeof CATEGORIES)[number];
 
@@ -21,9 +16,26 @@ interface HeroProps {
   onSearchChange: (value: string) => void;
   activeCategory: Category;
   onCategoryChange: (category: Category) => void;
+  allTags: string[];
+  selectedTags: string[];
+  onTagToggle: (tag: string) => void;
 }
 
-export function Hero({ searchQuery, onSearchChange, activeCategory, onCategoryChange }: HeroProps) {
+export function Hero({
+  searchQuery,
+  onSearchChange,
+  activeCategory,
+  onCategoryChange,
+  allTags,
+  selectedTags,
+  onTagToggle,
+}: HeroProps) {
+  const [tagsExpanded, setTagsExpanded] = useState(false);
+
+  const hasMoreTags = allTags.length > TAGS_INITIAL_COUNT;
+  const visibleTags = tagsExpanded ? allTags : allTags.slice(0, TAGS_INITIAL_COUNT);
+  const hiddenCount = hasMoreTags ? allTags.length - TAGS_INITIAL_COUNT : 0;
+
   return (
     <section className="relative overflow-hidden py-12 px-4 text-center">
       {/* Background gradient */}
@@ -81,10 +93,53 @@ export function Hero({ searchQuery, onSearchChange, activeCategory, onCategoryCh
                 : "border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground backdrop-blur-sm"
             }
           >
-            {CATEGORY_LABELS[category]}
+            {categoryLabels[category]}
           </Button>
         ))}
       </div>
+
+      {/* Tag filters */}
+      {allTags.length > 0 && (
+        <div className="mx-auto mt-4 max-w-3xl">
+          <div className="flex flex-wrap justify-center gap-2">
+            {visibleTags.map((tag) => (
+              <button
+                key={tag}
+                type="button"
+                onClick={() => onTagToggle(tag)}
+                className={
+                  selectedTags.includes(tag)
+                    ? "inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium border border-violet-500 bg-violet-500/20 text-violet-300 hover:bg-violet-500/30 transition-colors"
+                    : "inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium border border-white/10 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground transition-colors"
+                }
+              >
+                {tag}
+                {selectedTags.includes(tag) && <X className="h-3 w-3" />}
+              </button>
+            ))}
+          </div>
+
+          {hasMoreTags && (
+            <button
+              type="button"
+              onClick={() => setTagsExpanded((v) => !v)}
+              className="mt-3 inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {tagsExpanded ? (
+                <>
+                  <ChevronUp className="h-3 w-3" />
+                  收起
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="h-3 w-3" />
+                  {`展开更多标签 (${hiddenCount})`}
+                </>
+              )}
+            </button>
+          )}
+        </div>
+      )}
     </section>
   );
 }

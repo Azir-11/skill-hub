@@ -39,11 +39,11 @@ export const getSkillHref = (skill: Skill) => (isSelfSkill(skill) ? `/skills/${s
 
 export const categoryLabels: Record<Category, string> = {
   All: "全部",
-  Prompt: "提示词",
+  Prompt: "提示词工程",
   "UI-UX": "界面设计",
-  CLI: "命令行",
-  Agent: "智能体",
-  Script: "框架脚本",
+  CLI: "命令行工具",
+  Agent: "AI 智能体",
+  Script: "工程实践",
 };
 
 export function formatRelativeTime(dateString: string | null): string {
