@@ -287,5 +287,2266 @@
       "JavaScript",
       "前端架构"
     ]
+  },
+  {
+    "id": "20260318060002",
+    "name": "frontend-design",
+    "description": "创建独特、生产级前端界面的高设计质量技能。",
+    "full_description": "适用于构建 Web 组件、页面或应用时，避免通用 AI 风格，生成创意强、视觉精良的代码与 UI 设计。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 95,
+    "tags": [
+      "前端设计",
+      "UI 生成",
+      "React"
+    ]
+  },
+  {
+    "id": "20260318060003",
+    "name": "pdf",
+    "description": "在 Claude 对话中读取和处理 PDF 文件的技能。",
+    "full_description": "允许 Claude 直接读取 PDF 内容，进行摘要、提取和分析，无需额外工具。",
+    "category": "文档处理",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 92,
+    "tags": [
+      "PDF",
+      "文档",
+      "文件处理"
+    ]
+  },
+  {
+    "id": "20260318060004",
+    "name": "docx",
+    "description": "读取和处理 Word 文档（.docx）的技能。",
+    "full_description": "让 Claude 能够解析 .docx 格式文件，提取文本内容并执行编辑、摘要等操作。",
+    "category": "文档处理",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/docx",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "Word",
+      "文档",
+      "文件处理"
+    ]
+  },
+  {
+    "id": "20260318060005",
+    "name": "xlsx",
+    "description": "读取和处理 Excel 电子表格（.xlsx）的技能。",
+    "full_description": "使 Claude 能够解析 Excel 文件，提取数据、执行计算并生成报表摘要。",
+    "category": "文档处理",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "Excel",
+      "电子表格",
+      "数据处理"
+    ]
+  },
+  {
+    "id": "20260318060006",
+    "name": "pptx",
+    "description": "读取和处理 PowerPoint 演示文稿（.pptx）的技能。",
+    "full_description": "让 Claude 能够解析 .pptx 文件，提取幻灯片内容并生成摘要或修改建议。",
+    "category": "文档处理",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "PowerPoint",
+      "演示文稿",
+      "文件处理"
+    ]
+  },
+  {
+    "id": "20260318060007",
+    "name": "web-artifacts-builder",
+    "description": "快速生成可直接运行的 Web 应用 Artifact 的技能。",
+    "full_description": "适合快速原型开发，能生成完整的 HTML/CSS/JS 单页应用，并可在 Claude 界面中即时预览。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 93,
+    "tags": [
+      "Web",
+      "快速原型",
+      "Artifact"
+    ]
+  },
+  {
+    "id": "20260318060008",
+    "name": "mcp-builder",
+    "description": "构建 MCP（Model Context Protocol）服务器的技能。",
+    "full_description": "帮助开发者搭建 MCP 服务器，扩展 Claude 的工具调用能力，支持自定义数据源和 API 集成。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "MCP",
+      "工具开发",
+      "API 集成"
+    ]
+  },
+  {
+    "id": "20260318060009",
+    "name": "webapp-testing",
+    "description": "为 Web 应用自动生成测试代码的技能。",
+    "full_description": "自动分析 Web 应用结构，生成单元测试、集成测试和端对端测试，提升代码质量。",
+    "category": "测试",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "测试",
+      "Web",
+      "自动化"
+    ]
+  },
+  {
+    "id": "20260318060010",
+    "name": "skill-creator",
+    "description": "创建新 Claude 技能的元技能。",
+    "full_description": "引导用户设计和生成新的 Claude 技能定义，包括描述、工具配置和最佳实践说明。",
+    "category": "工具开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 90,
+    "tags": [
+      "技能创建",
+      "元技能",
+      "Claude 开发"
+    ]
+  },
+  {
+    "id": "20260318060011",
+    "name": "canvas-design",
+    "description": "基于 Canvas API 创建交互式可视化和图形的技能。",
+    "full_description": "利用 HTML5 Canvas 构建数据可视化、动画和交互式图形，适合创意项目和数据展示。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Canvas",
+      "可视化",
+      "动画"
+    ]
+  },
+  {
+    "id": "20260318060012",
+    "name": "theme-factory",
+    "description": "为应用生成完整主题配色方案的技能。",
+    "full_description": "根据品牌要求或用户偏好生成色彩系统、字体配置和设计令牌，适用于 Tailwind CSS 等框架。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "主题",
+      "配色",
+      "设计系统"
+    ]
+  },
+  {
+    "id": "20260318060013",
+    "name": "web-design-guidelines",
+    "description": "遵循现代 Web 设计规范输出高质量界面的技能。",
+    "full_description": "基于响应式设计、可访问性和现代审美原则，帮助 Claude 生成符合行业标准的 Web 界面。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "设计规范",
+      "响应式",
+      "Web 设计"
+    ]
+  },
+  {
+    "id": "20260318060014",
+    "name": "react-native-skills",
+    "description": "使用 React Native 构建跨平台移动应用的最佳实践技能。",
+    "full_description": "提供 React Native 开发指南，涵盖组件设计、导航、状态管理和平台适配等核心实践。",
+    "category": "移动开发",
+    "github_url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-native-skills",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "React Native",
+      "移动开发",
+      "跨平台"
+    ]
+  },
+  {
+    "id": "20260318060015",
+    "name": "composition-patterns",
+    "description": "掌握 React 组件组合模式的技能。",
+    "full_description": "涵盖 Render Props、HOC、Compound Components 等高级 React 组合模式，提升组件可复用性。",
+    "category": "编程开发",
+    "github_url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "React",
+      "组件模式",
+      "设计模式"
+    ]
+  },
+  {
+    "id": "20260318060016",
+    "name": "deploy-to-vercel",
+    "description": "将应用一键部署到 Vercel 平台的技能。",
+    "full_description": "引导完成 Vercel 部署配置，包括环境变量设置、域名绑定和 CI/CD 流水线配置。",
+    "category": "DevOps",
+    "github_url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/deploy-to-vercel",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Vercel",
+      "部署",
+      "CI/CD"
+    ]
+  },
+  {
+    "id": "20260318060017",
+    "name": "find-skills",
+    "description": "在 skills.sh 上发现和推荐合适技能的元技能。",
+    "full_description": "根据用户的任务描述智能搜索和推荐最合适的 Claude 技能，帮助用户快速找到所需能力。",
+    "category": "工具开发",
+    "github_url": "https://github.com/vercel-labs/skills/tree/main/skills/find-skills",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "技能发现",
+      "推荐",
+      "元技能"
+    ]
+  },
+  {
+    "id": "20260318060018",
+    "name": "prompt-engineering",
+    "description": "系统性优化 AI 提示词工程的技能。",
+    "full_description": "提供提示词设计、测试和迭代的完整方法论，帮助从业者构建更有效的 AI 提示。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/main/skills/prompt-engineering",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "提示词",
+      "Prompt Engineering",
+      "AI 优化"
+    ]
+  },
+  {
+    "id": "20260318060019",
+    "name": "software-architecture",
+    "description": "系统架构设计与评审的技能。",
+    "full_description": "帮助设计和评审软件系统架构，涵盖微服务、事件驱动、领域驱动设计等主流架构模式。",
+    "category": "编程开发",
+    "github_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/main/skills/software-architecture",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "架构设计",
+      "微服务",
+      "DDD"
+    ]
+  },
+  {
+    "id": "20260318060020",
+    "name": "subagent-driven-development",
+    "description": "使用子代理协作完成复杂开发任务的技能。",
+    "full_description": "通过将复杂任务分解为子代理并行处理，实现大规模软件开发的高效协作和质量管控。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/main/skills/subagent-driven-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "子代理",
+      "AI 协作",
+      "自动化开发"
+    ]
+  },
+  {
+    "id": "20260318060021",
+    "name": "kaizen",
+    "description": "持续改进代码和流程的精益技能。",
+    "full_description": "将日本精益改进理念应用于软件开发，系统性识别和消除浪费，持续优化开发效率和代码质量。",
+    "category": "工程效率",
+    "github_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/main/skills/kaizen",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "持续改进",
+      "精益",
+      "工程文化"
+    ]
+  },
+  {
+    "id": "20260318060022",
+    "name": "changelog-generator",
+    "description": "自动生成规范的项目变更日志的技能。",
+    "full_description": "分析 Git 提交历史，按照约定式提交规范自动生成结构清晰、分类明确的 CHANGELOG 文档。",
+    "category": "文档处理",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/changelog-generator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "CHANGELOG",
+      "版本管理",
+      "文档自动化"
+    ]
+  },
+  {
+    "id": "20260318060023",
+    "name": "tailored-resume-generator",
+    "description": "针对特定职位生成定制化简历的技能。",
+    "full_description": "根据职位描述和候选人背景，智能调整简历内容和关键词，提升 ATS 通过率和面试机会。",
+    "category": "写作",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/tailored-resume-generator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "简历",
+      "求职",
+      "内容优化"
+    ]
+  },
+  {
+    "id": "20260318060024",
+    "name": "meeting-insights-analyzer",
+    "description": "深度分析会议记录并提取关键洞察的技能。",
+    "full_description": "处理会议录音或文字记录，提取行动项、决策点和关键讨论，生成结构化会议摘要。",
+    "category": "生产力",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/meeting-insights-analyzer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "会议分析",
+      "摘要",
+      "生产力"
+    ]
+  },
+  {
+    "id": "20260318060025",
+    "name": "lead-research-assistant",
+    "description": "自动化潜在客户调研和信息整合的技能。",
+    "full_description": "搜集和整合目标客户的公司信息、行业动态和联系方式，为销售团队提供高质量的潜在客户洞察。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/lead-research-assistant",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "销售",
+      "客户调研",
+      "商业情报"
+    ]
+  },
+  {
+    "id": "20260318060026",
+    "name": "code-review",
+    "description": "专业代码审查与改进建议技能。",
+    "full_description": "对代码进行深度审查，识别潜在 Bug、性能瓶颈、安全漏洞和代码规范问题，并提供具体改进方案。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/code-review",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 92,
+    "tags": [
+      "代码审查",
+      "代码质量",
+      "最佳实践"
+    ]
+  },
+  {
+    "id": "20260318060027",
+    "name": "database-design",
+    "description": "数据库架构设计与优化技能。",
+    "full_description": "帮助设计高效的数据库结构，包括表关系、索引策略、查询优化和数据迁移方案。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/database-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "数据库",
+      "SQL",
+      "架构设计"
+    ]
+  },
+  {
+    "id": "20260318060028",
+    "name": "api-design",
+    "description": "设计规范、易用 RESTful API 的技能。",
+    "full_description": "遵循 REST 设计原则，帮助设计清晰的 API 端点、请求/响应结构、认证方案和版本策略。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/api-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "API",
+      "REST",
+      "接口设计"
+    ]
+  },
+  {
+    "id": "20260318060029",
+    "name": "docker-compose",
+    "description": "使用 Docker Compose 编排多容器应用的技能。",
+    "full_description": "帮助编写和优化 docker-compose.yml 配置，实现多服务容器化部署、网络配置和卷管理。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/docker-compose",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Docker",
+      "容器化",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "20260318060030",
+    "name": "github-actions",
+    "description": "构建 GitHub Actions CI/CD 工作流的技能。",
+    "full_description": "帮助设计和编写 GitHub Actions 工作流，实现自动化测试、构建、部署和代码质量检查。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/github-actions",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "GitHub Actions",
+      "CI/CD",
+      "自动化"
+    ]
+  },
+  {
+    "id": "20260318060031",
+    "name": "nextjs-best-practices",
+    "description": "Next.js 应用开发最佳实践技能。",
+    "full_description": "涵盖 App Router、服务端组件、数据获取、性能优化和部署策略等 Next.js 核心最佳实践。",
+    "category": "编程开发",
+    "github_url": "https://github.com/vercel-labs/next-skills/tree/main/skills/nextjs-best-practices",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "Next.js",
+      "React",
+      "全栈开发"
+    ]
+  },
+  {
+    "id": "20260318060032",
+    "name": "typescript-expert",
+    "description": "TypeScript 高级类型系统与最佳实践技能。",
+    "full_description": "深入讲解 TypeScript 泛型、条件类型、工具类型和类型推断，帮助编写更安全、更可维护的代码。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/typescript-expert",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 90,
+    "tags": [
+      "TypeScript",
+      "类型系统",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "20260318060033",
+    "name": "python-data-analysis",
+    "description": "Python 数据分析与科学计算技能。",
+    "full_description": "使用 Pandas、NumPy、Matplotlib 等库进行数据清洗、分析、可视化，提供完整的数据科学工作流。",
+    "category": "数据科学",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/python-data-analysis",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "Python",
+      "数据分析",
+      "Pandas"
+    ]
+  },
+  {
+    "id": "20260318060034",
+    "name": "tailwindcss-expert",
+    "description": "精通 Tailwind CSS 工具类框架的样式技能。",
+    "full_description": "帮助使用 Tailwind CSS 构建响应式、定制化的界面，涵盖配置、组件提取和与主流框架集成。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/tailwindcss-expert",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "Tailwind CSS",
+      "CSS",
+      "前端样式"
+    ]
+  },
+  {
+    "id": "20260318060035",
+    "name": "aws-cdk",
+    "description": "使用 AWS CDK 进行基础设施即代码的技能。",
+    "full_description": "帮助使用 AWS CDK 定义和部署云基础设施，涵盖 Lambda、S3、DynamoDB 等核心 AWS 服务。",
+    "category": "云计算",
+    "github_url": "https://github.com/zxkane/aws-skills/tree/main/skills/aws-cdk",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "AWS",
+      "CDK",
+      "云基础设施"
+    ]
+  },
+  {
+    "id": "20260318060036",
+    "name": "aws-lambda",
+    "description": "设计和部署 AWS Lambda 无服务器函数的技能。",
+    "full_description": "帮助构建高效的 Serverless 函数，涵盖事件触发、权限配置、冷启动优化和监控告警。",
+    "category": "云计算",
+    "github_url": "https://github.com/zxkane/aws-skills/tree/main/skills/aws-lambda",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "AWS Lambda",
+      "Serverless",
+      "云函数"
+    ]
+  },
+  {
+    "id": "20260318060037",
+    "name": "security-audit",
+    "description": "代码安全审计与漏洞检测技能。",
+    "full_description": "系统分析代码中的安全风险，包括 SQL 注入、XSS、CSRF、敏感数据泄露等 OWASP 十大安全问题。",
+    "category": "安全",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/security-audit",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 91,
+    "tags": [
+      "安全审计",
+      "漏洞检测",
+      "OWASP"
+    ]
+  },
+  {
+    "id": "20260318060038",
+    "name": "graphql-api",
+    "description": "设计和实现 GraphQL API 的技能。",
+    "full_description": "帮助设计 GraphQL Schema、解析器和订阅，实现高效的数据查询和实时更新功能。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/graphql-api",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "GraphQL",
+      "API",
+      "查询语言"
+    ]
+  },
+  {
+    "id": "20260318060039",
+    "name": "testing-best-practices",
+    "description": "软件测试最佳实践与测试驱动开发技能。",
+    "full_description": "涵盖单元测试、集成测试、E2E 测试的编写原则，以及 TDD/BDD 方法论和测试覆盖率提升策略。",
+    "category": "测试",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/testing-best-practices",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "测试",
+      "TDD",
+      "代码质量"
+    ]
+  },
+  {
+    "id": "20260318060040",
+    "name": "git-workflow",
+    "description": "高效 Git 工作流与版本控制最佳实践技能。",
+    "full_description": "涵盖 Git Flow、Trunk-based Development、分支策略、代码审查流程和冲突解决技巧。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/git-workflow",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "Git",
+      "版本控制",
+      "工作流"
+    ]
+  },
+  {
+    "id": "20260318060041",
+    "name": "performance-optimization",
+    "description": "Web 应用性能优化分析与改进技能。",
+    "full_description": "分析和优化 Web 应用加载速度、运行时性能和资源使用，涵盖 Core Web Vitals 和性能监控。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/performance-optimization",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "性能优化",
+      "Web",
+      "Core Web Vitals"
+    ]
+  },
+  {
+    "id": "20260318060042",
+    "name": "content-writer",
+    "description": "高质量英文内容写作与优化技能。",
+    "full_description": "帮助撰写博客文章、营销文案、产品描述和技术文档，确保内容清晰、吸引人且符合 SEO 最佳实践。",
+    "category": "写作",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/content-writer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "内容写作",
+      "SEO",
+      "文案"
+    ]
+  },
+  {
+    "id": "20260318060043",
+    "name": "email-composer",
+    "description": "撰写专业商务邮件的技能。",
+    "full_description": "根据场景和受众定制专业邮件内容，涵盖开场白、主体逻辑和结尾行动引导，提升沟通效率。",
+    "category": "写作",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/email-composer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "邮件写作",
+      "商务沟通",
+      "写作"
+    ]
+  },
+  {
+    "id": "20260318060044",
+    "name": "social-media-creator",
+    "description": "创作引人入胜的社交媒体内容的技能。",
+    "full_description": "针对不同平台（Twitter/X、LinkedIn、Instagram 等）生成适配的内容形式，提升互动率和传播效果。",
+    "category": "写作",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/social-media-creator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "社交媒体",
+      "内容创作",
+      "营销"
+    ]
+  },
+  {
+    "id": "20260318060045",
+    "name": "data-visualization",
+    "description": "设计和实现数据可视化图表的技能。",
+    "full_description": "使用 D3.js、Chart.js 或 ECharts 等库构建交互式数据图表，帮助用户从数据中发现洞察。",
+    "category": "数据科学",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/data-visualization",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "数据可视化",
+      "图表",
+      "D3.js"
+    ]
+  },
+  {
+    "id": "20260318060046",
+    "name": "machine-learning-basics",
+    "description": "机器学习入门与实践技能。",
+    "full_description": "介绍监督学习、无监督学习和强化学习基础，使用 scikit-learn 实现常见 ML 算法和模型评估。",
+    "category": "数据科学",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/machine-learning-basics",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "机器学习",
+      "AI",
+      "Python"
+    ]
+  },
+  {
+    "id": "20260318060047",
+    "name": "regex-master",
+    "description": "正则表达式编写与调试技能。",
+    "full_description": "帮助编写、解释和优化正则表达式，涵盖各语言差异和常见模式匹配场景。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/regex-master",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "正则表达式",
+      "文本处理",
+      "编程工具"
+    ]
+  },
+  {
+    "id": "20260318060048",
+    "name": "shell-scripting",
+    "description": "Shell 脚本自动化技能。",
+    "full_description": "编写高效的 Bash/Zsh 脚本，实现系统任务自动化、文件处理和批量操作，提升运维效率。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/shell-scripting",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "Shell",
+      "Bash",
+      "自动化脚本"
+    ]
+  },
+  {
+    "id": "20260318060049",
+    "name": "kubernetes-basics",
+    "description": "Kubernetes 容器编排入门技能。",
+    "full_description": "帮助理解和配置 Kubernetes 核心概念，包括 Pod、Deployment、Service 和 Ingress，实现容器化应用的生产部署。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/kubernetes-basics",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Kubernetes",
+      "容器编排",
+      "云原生"
+    ]
+  },
+  {
+    "id": "20260318060050",
+    "name": "svelte-development",
+    "description": "使用 Svelte 构建高性能前端应用的技能。",
+    "full_description": "Svelte/SvelteKit 开发最佳实践，涵盖响应式声明、存储管理和服务端渲染，提供零运行时框架的优化体验。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/svelte-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "Svelte",
+      "SvelteKit",
+      "前端框架"
+    ]
+  },
+  {
+    "id": "20260318060051",
+    "name": "vue3-best-practices",
+    "description": "Vue 3 Composition API 开发最佳实践技能。",
+    "full_description": "深入 Vue 3 的响应式系统、组合式 API 和 <script setup> 语法，构建高可维护性的大型应用。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/vue3-best-practices",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "Vue 3",
+      "Composition API",
+      "前端框架"
+    ]
+  },
+  {
+    "id": "20260318060052",
+    "name": "prisma-orm",
+    "description": "使用 Prisma ORM 进行数据库操作的技能。",
+    "full_description": "帮助配置和使用 Prisma ORM，实现类型安全的数据库查询、迁移管理和关系数据建模。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/prisma-orm",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Prisma",
+      "ORM",
+      "数据库"
+    ]
+  },
+  {
+    "id": "20260318060053",
+    "name": "redis-caching",
+    "description": "Redis 缓存策略设计与实现技能。",
+    "full_description": "帮助设计 Redis 缓存架构，涵盖缓存穿透/击穿/雪崩防护、过期策略和分布式锁实现。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/redis-caching",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "Redis",
+      "缓存",
+      "性能优化"
+    ]
+  },
+  {
+    "id": "20260318060054",
+    "name": "openai-integration",
+    "description": "集成 OpenAI API 构建 AI 应用的技能。",
+    "full_description": "帮助集成 OpenAI GPT、Whisper 和 DALL-E 等 API，实现智能对话、语音识别和图像生成功能。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/openai-integration",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "OpenAI",
+      "GPT",
+      "AI 集成"
+    ]
+  },
+  {
+    "id": "20260318060055",
+    "name": "langchain-development",
+    "description": "使用 LangChain 构建 LLM 应用的技能。",
+    "full_description": "帮助使用 LangChain 框架构建 RAG 系统、对话代理和工具链，简化大语言模型应用开发。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/langchain-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "LangChain",
+      "LLM",
+      "RAG"
+    ]
+  },
+  {
+    "id": "20260318060056",
+    "name": "vector-database",
+    "description": "向量数据库选型与应用开发技能。",
+    "full_description": "帮助选择和使用 Pinecone、Weaviate、Chroma 等向量数据库，实现语义搜索和 RAG 系统。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/vector-database",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "向量数据库",
+      "语义搜索",
+      "RAG"
+    ]
+  },
+  {
+    "id": "20260318060057",
+    "name": "fastapi-development",
+    "description": "使用 FastAPI 构建高性能 Python Web API 的技能。",
+    "full_description": "帮助使用 FastAPI 构建类型安全、高性能的 REST API，涵盖依赖注入、中间件、认证和自动文档生成。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/fastapi-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "FastAPI",
+      "Python",
+      "API 开发"
+    ]
+  },
+  {
+    "id": "20260318060058",
+    "name": "go-backend",
+    "description": "Go 语言后端服务开发技能。",
+    "full_description": "使用 Go 构建高并发、高性能的后端服务，涵盖 Goroutine、Channel、标准库和主流框架的最佳实践。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/go-backend",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Go",
+      "Golang",
+      "后端开发"
+    ]
+  },
+  {
+    "id": "20260318060059",
+    "name": "rust-systems",
+    "description": "Rust 系统编程与安全内存管理技能。",
+    "full_description": "深入 Rust 所有权系统、生命周期和 Trait，帮助编写内存安全、高性能的系统级程序。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/rust-systems",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "Rust",
+      "系统编程",
+      "内存安全"
+    ]
+  },
+  {
+    "id": "20260318060060",
+    "name": "mobile-ux-design",
+    "description": "移动端用户体验设计最佳实践技能。",
+    "full_description": "遵循 iOS HIG 和 Material Design 规范，设计符合平台特性的移动端界面，提升用户体验和转化率。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/mobile-ux-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "移动端",
+      "UX",
+      "UI 设计"
+    ]
+  },
+  {
+    "id": "20260318060061",
+    "name": "animation-design",
+    "description": "Web 动画设计与实现技能。",
+    "full_description": "使用 CSS Animations、Framer Motion 或 GSAP 创建流畅、自然的界面动画，提升用户体验。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/animation-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "动画",
+      "CSS",
+      "Framer Motion"
+    ]
+  },
+  {
+    "id": "20260318060062",
+    "name": "seo-optimizer",
+    "description": "网站 SEO 优化策略与实施技能。",
+    "full_description": "分析和优化网站 SEO 因素，包括 Meta 标签、结构化数据、页面速度和内部链接策略，提升搜索排名。",
+    "category": "营销",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/seo-optimizer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "SEO",
+      "搜索优化",
+      "营销"
+    ]
+  },
+  {
+    "id": "20260318060063",
+    "name": "product-requirement-writer",
+    "description": "撰写清晰产品需求文档（PRD）的技能。",
+    "full_description": "帮助产品经理撰写结构化的产品需求文档，涵盖用户故事、验收标准和功能优先级排序。",
+    "category": "产品管理",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/product-requirement-writer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "PRD",
+      "产品文档",
+      "需求管理"
+    ]
+  },
+  {
+    "id": "20260318060064",
+    "name": "bug-detective",
+    "description": "智能定位和修复代码 Bug 的技能。",
+    "full_description": "系统性分析代码逻辑、错误堆栈和边界条件，精准定位 Bug 根因并提供可靠的修复方案。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/bug-detective",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 90,
+    "tags": [
+      "调试",
+      "Bug 修复",
+      "代码质量"
+    ]
+  },
+  {
+    "id": "20260318060065",
+    "name": "code-refactoring",
+    "description": "代码重构与技术债务清理技能。",
+    "full_description": "识别代码异味，应用重构模式提升代码可读性和可维护性，同时保持原有功能不变。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/code-refactoring",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 88,
+    "tags": [
+      "重构",
+      "代码质量",
+      "技术债务"
+    ]
+  },
+  {
+    "id": "20260318060066",
+    "name": "system-design-interview",
+    "description": "系统设计面试准备与解题技能。",
+    "full_description": "帮助掌握系统设计面试框架，涵盖需求分析、容量估算、高可用架构和数据库选型，覆盖常见大厂面试题。",
+    "category": "学习",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/system-design-interview",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "系统设计",
+      "面试",
+      "架构"
+    ]
+  },
+  {
+    "id": "20260318060067",
+    "name": "algorithm-problem-solver",
+    "description": "算法题解析与代码实现技能。",
+    "full_description": "帮助理解和解决算法问题，提供清晰的思路分析、时空复杂度分析和多语言代码实现。",
+    "category": "学习",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/algorithm-problem-solver",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "算法",
+      "数据结构",
+      "编程竞赛"
+    ]
+  },
+  {
+    "id": "20260318060068",
+    "name": "language-translator",
+    "description": "高质量多语言翻译技能。",
+    "full_description": "提供自然流畅的文本翻译，保留原文语气和文化语境，适用于商务、技术和文学翻译场景。",
+    "category": "写作",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/language-translator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "翻译",
+      "多语言",
+      "本地化"
+    ]
+  },
+  {
+    "id": "20260318060069",
+    "name": "math-solver",
+    "description": "数学问题解题与推导技能。",
+    "full_description": "解析和求解代数、微积分、统计学等数学问题，提供详细的解题步骤和概念解释。",
+    "category": "学习",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/math-solver",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "数学",
+      "解题",
+      "教育"
+    ]
+  },
+  {
+    "id": "20260318060070",
+    "name": "scientific-paper-analyzer",
+    "description": "学术论文解析与文献综述技能。",
+    "full_description": "帮助读取、理解和总结学术论文，提取核心贡献、实验方法和研究局限性，加速科研文献阅读效率。",
+    "category": "学习",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/scientific-paper-analyzer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "学术论文",
+      "文献综述",
+      "科研"
+    ]
+  },
+  {
+    "id": "20260318060071",
+    "name": "financial-analyst",
+    "description": "财务数据分析与投资评估技能。",
+    "full_description": "分析财务报表、计算关键指标，帮助评估企业财务健康状况和投资价值，提供数据驱动的决策支持。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/financial-analyst",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "财务分析",
+      "投资",
+      "商业"
+    ]
+  },
+  {
+    "id": "20260318060072",
+    "name": "legal-document-reviewer",
+    "description": "法律文件审阅与关键条款解析技能。",
+    "full_description": "辅助审阅合同、协议和法律文件，识别潜在风险条款、不合理条件和合规问题，提供修改建议。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/legal-document-reviewer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "法律文件",
+      "合同审查",
+      "合规"
+    ]
+  },
+  {
+    "id": "20260318060073",
+    "name": "customer-support-agent",
+    "description": "智能客服支持与工单处理技能。",
+    "full_description": "模拟专业客服处理用户查询、投诉和技术支持请求，提供一致、高效的客户服务体验。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/customer-support-agent",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "客服",
+      "用户支持",
+      "对话"
+    ]
+  },
+  {
+    "id": "20260318060074",
+    "name": "market-research",
+    "description": "市场调研与竞品分析技能。",
+    "full_description": "帮助开展市场调研、竞品分析和用户画像研究，提供数据支撑的市场洞察和业务机会评估。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/market-research",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "市场调研",
+      "竞品分析",
+      "商业情报"
+    ]
+  },
+  {
+    "id": "20260318060075",
+    "name": "storyboard-creator",
+    "description": "视觉化故事板与用户旅程设计技能。",
+    "full_description": "帮助创建产品故事板、用户旅程图和场景化设计说明，将抽象想法可视化呈现。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/storyboard-creator",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "故事板",
+      "用户旅程",
+      "UX 设计"
+    ]
+  },
+  {
+    "id": "20260318060076",
+    "name": "monorepo-management",
+    "description": "大型 Monorepo 项目管理与工具配置技能。",
+    "full_description": "帮助配置和管理 Turborepo、Nx 或 pnpm Workspace，实现代码共享、构建缓存和依赖管理。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/monorepo-management",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "Monorepo",
+      "Turborepo",
+      "工程管理"
+    ]
+  },
+  {
+    "id": "20260318060077",
+    "name": "error-handling-patterns",
+    "description": "软件错误处理与异常管理最佳实践技能。",
+    "full_description": "介绍不同语言的错误处理模式，涵盖异常捕获、错误传播、日志记录和用户友好错误提示的最佳实践。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/error-handling-patterns",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "错误处理",
+      "异常管理",
+      "代码质量"
+    ]
+  },
+  {
+    "id": "20260318060078",
+    "name": "authentication-system",
+    "description": "构建安全身份认证系统的技能。",
+    "full_description": "帮助实现 JWT、OAuth 2.0、SSO 等认证机制，涵盖密码存储、会话管理和多因素认证安全实践。",
+    "category": "安全",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/authentication-system",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "认证",
+      "JWT",
+      "OAuth"
+    ]
+  },
+  {
+    "id": "20260318060079",
+    "name": "microservices-design",
+    "description": "微服务架构设计与拆分策略技能。",
+    "full_description": "帮助识别服务边界、设计通信协议和数据一致性方案，构建高内聚低耦合的微服务体系。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/microservices-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "微服务",
+      "分布式系统",
+      "架构"
+    ]
+  },
+  {
+    "id": "20260318060080",
+    "name": "event-driven-architecture",
+    "description": "事件驱动架构设计与消息队列集成技能。",
+    "full_description": "帮助设计事件驱动系统，集成 Kafka、RabbitMQ 或云消息服务，实现解耦的异步通信。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/event-driven-architecture",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "事件驱动",
+      "消息队列",
+      "Kafka"
+    ]
+  },
+  {
+    "id": "20260318060081",
+    "name": "interview-prep",
+    "description": "技术面试准备与模拟练习技能。",
+    "full_description": "提供编程、系统设计和行为面试的模拟题目和详细解析，帮助求职者系统备考知名科技公司面试。",
+    "category": "学习",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/interview-prep",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "面试准备",
+      "技术面试",
+      "求职"
+    ]
+  },
+  {
+    "id": "20260318060082",
+    "name": "startup-advisor",
+    "description": "创业公司战略规划与商业模式设计技能。",
+    "full_description": "帮助初创团队完善商业模式、定价策略、融资方案和产品路线图，提供早期阶段的战略决策支持。",
+    "category": "商业",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/startup-advisor",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "创业",
+      "商业模式",
+      "战略"
+    ]
+  },
+  {
+    "id": "20260318060083",
+    "name": "ux-researcher",
+    "description": "用户体验研究与可用性测试设计技能。",
+    "full_description": "帮助设计用户访谈、问卷和可用性测试方案，分析用户行为数据并转化为设计改进建议。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/ux-researcher",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "UX 研究",
+      "用户访谈",
+      "可用性测试"
+    ]
+  },
+  {
+    "id": "20260318060084",
+    "name": "obsidian-productivity",
+    "description": "使用 Obsidian 构建个人知识管理系统的技能。",
+    "full_description": "帮助设计 Obsidian 笔记结构、使用插件和模板，构建高效的第二大脑知识管理工作流。",
+    "category": "生产力",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/obsidian-productivity",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "Obsidian",
+      "知识管理",
+      "生产力"
+    ]
+  },
+  {
+    "id": "20260318060085",
+    "name": "notion-setup",
+    "description": "Notion 工作空间设计与团队协作配置技能。",
+    "full_description": "帮助设计和配置 Notion 数据库、看板和文档体系，建立高效的个人或团队工作流程。",
+    "category": "生产力",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/notion-setup",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "Notion",
+      "团队协作",
+      "生产力"
+    ]
+  },
+  {
+    "id": "20260318060086",
+    "name": "medical-literature-review",
+    "description": "医学文献检索与循证医学分析技能。",
+    "full_description": "帮助检索和分析医学文献，评估临床研究质量，提供循证医学证据摘要（仅供参考，非医疗建议）。",
+    "category": "学习",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/medical-literature-review",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "医学文献",
+      "循证医学",
+      "健康"
+    ]
+  },
+  {
+    "id": "20260318060087",
+    "name": "terraform-iac",
+    "description": "使用 Terraform 管理云基础设施的技能。",
+    "full_description": "帮助编写和管理 Terraform 配置，实现多云基础设施资源的版本化和自动化部署。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/terraform-iac",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "Terraform",
+      "基础设施即代码",
+      "云计算"
+    ]
+  },
+  {
+    "id": "20260318060088",
+    "name": "observability-setup",
+    "description": "构建应用可观测性体系的技能。",
+    "full_description": "帮助配置日志、指标和链路追踪三支柱，使用 Prometheus、Grafana 和 OpenTelemetry 构建完整监控体系。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/observability-setup",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "可观测性",
+      "监控",
+      "OpenTelemetry"
+    ]
+  },
+  {
+    "id": "20260318060089",
+    "name": "oauth-implementation",
+    "description": "实现 OAuth 2.0 授权流程的技能。",
+    "full_description": "帮助实现 OAuth 2.0 授权码流程、客户端凭据流程和 PKCE 扩展，集成 GitHub、Google 等主流身份提供商。",
+    "category": "安全",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/oauth-implementation",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "OAuth",
+      "授权",
+      "身份认证"
+    ]
+  },
+  {
+    "id": "20260318060090",
+    "name": "websocket-realtime",
+    "description": "WebSocket 实时通信应用开发技能。",
+    "full_description": "帮助构建基于 WebSocket 的实时功能，如在线聊天、协作编辑和实时数据推送，涵盖连接管理和断线重连。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/websocket-realtime",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "WebSocket",
+      "实时通信",
+      "Socket.io"
+    ]
+  },
+  {
+    "id": "20260318060091",
+    "name": "design-system-builder",
+    "description": "构建组件化设计系统的技能。",
+    "full_description": "帮助从零建立完整的设计系统，涵盖设计令牌、组件库、文档站点和版本管理，确保产品视觉一致性。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/design-system-builder",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "设计系统",
+      "组件库",
+      "UI 规范"
+    ]
+  },
+  {
+    "id": "20260318060092",
+    "name": "node-backend",
+    "description": "Node.js 后端服务开发最佳实践技能。",
+    "full_description": "使用 Express.js 或 Fastify 构建高性能 Node.js 后端，涵盖中间件设计、错误处理和生产部署配置。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/node-backend",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Node.js",
+      "后端开发",
+      "Express"
+    ]
+  },
+  {
+    "id": "20260318060093",
+    "name": "state-management",
+    "description": "前端状态管理方案选型与实践技能。",
+    "full_description": "对比 Redux Toolkit、Zustand、Jotai 等方案，根据项目复杂度选择合适的状态管理方案并给出最佳实践。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/state-management",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "状态管理",
+      "Redux",
+      "Zustand"
+    ]
+  },
+  {
+    "id": "20260318060094",
+    "name": "stripe-payment",
+    "description": "集成 Stripe 支付系统的技能。",
+    "full_description": "帮助集成 Stripe 支付功能，包括一次性支付、订阅计费、Webhook 处理和 SCA 合规，保障支付安全。",
+    "category": "商业",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/stripe-payment",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "Stripe",
+      "支付",
+      "电商"
+    ]
+  },
+  {
+    "id": "20260318060095",
+    "name": "form-validation",
+    "description": "表单验证与用户输入处理技能。",
+    "full_description": "使用 Zod、Yup 或 React Hook Form 实现类型安全的表单验证，提供友好的错误提示和无障碍支持。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/form-validation",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "表单验证",
+      "Zod",
+      "React Hook Form"
+    ]
+  },
+  {
+    "id": "20260318060096",
+    "name": "image-optimization",
+    "description": "Web 图片优化与懒加载实现技能。",
+    "full_description": "帮助优化图片格式选择、压缩策略和懒加载配置，显著减少页面加载时间和带宽消耗。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/image-optimization",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "图片优化",
+      "性能",
+      "Web"
+    ]
+  },
+  {
+    "id": "20260318060097",
+    "name": "i18n-localization",
+    "description": "应用国际化与本地化实施技能。",
+    "full_description": "帮助配置 i18next、next-intl 等国际化框架，实现多语言支持、语言切换和格式本地化。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/i18n-localization",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "国际化",
+      "本地化",
+      "多语言"
+    ]
+  },
+  {
+    "id": "20260318060098",
+    "name": "agile-coach",
+    "description": "敏捷开发流程指导与团队改进技能。",
+    "full_description": "帮助团队实践 Scrum、Kanban 等敏捷方法，优化 Sprint 规划、回顾会议和持续改进流程。",
+    "category": "产品管理",
+    "github_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/main/skills/agile-coach",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "敏捷开发",
+      "Scrum",
+      "团队管理"
+    ]
+  },
+  {
+    "id": "20260318060099",
+    "name": "open-source-contributor",
+    "description": "参与开源项目贡献的指导技能。",
+    "full_description": "帮助找到合适的开源项目、理解贡献规范、准备 PR 和与维护者沟通，降低开源贡献门槛。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/open-source-contributor",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "开源",
+      "GitHub",
+      "社区贡献"
+    ]
+  },
+  {
+    "id": "20260318060100",
+    "name": "tech-debt-tracker",
+    "description": "技术债务识别与偿还计划制定技能。",
+    "full_description": "帮助团队系统梳理和量化技术债务，制定合理的偿还优先级和路线图，平衡业务需求与技术健康度。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/tech-debt-tracker",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "技术债务",
+      "代码质量",
+      "工程管理"
+    ]
+  },
+  {
+    "id": "20260318060101",
+    "name": "dependency-updater",
+    "description": "自动化检查和更新项目依赖的技能。",
+    "full_description": "分析项目依赖过期情况，评估升级风险，提供安全的依赖更新策略和兼容性修复建议。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/dependency-updater",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "依赖管理",
+      "版本更新",
+      "安全"
+    ]
+  },
+  {
+    "id": "20260318060102",
+    "name": "superpowers-coding",
+    "description": "增强编码能力的超能力技能集合。",
+    "full_description": "来自 obra/superpowers 的编码增强技能，涵盖代码生成、重构和问题解决的多种超级助手能力。",
+    "category": "编程开发",
+    "github_url": "https://github.com/obra/superpowers",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "编码助手",
+      "超能力",
+      "生产力"
+    ]
+  },
+  {
+    "id": "20260318060103",
+    "name": "ai-agent-builder",
+    "description": "构建自主 AI 代理应用的技能。",
+    "full_description": "帮助设计和实现具有工具调用、记忆管理和目标规划能力的自主 AI 代理，实现复杂任务自动化。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/sanjay3290/ai-skills",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "AI 代理",
+      "自主代理",
+      "工具调用"
+    ]
+  },
+  {
+    "id": "20260318060104",
+    "name": "rag-system",
+    "description": "构建检索增强生成（RAG）系统的技能。",
+    "full_description": "帮助设计和实现 RAG 管道，涵盖文档分块、嵌入向量生成、检索策略和响应生成，提升 LLM 知识准确性。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/rag-system",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 89,
+    "tags": [
+      "RAG",
+      "检索增强",
+      "LLM"
+    ]
+  },
+  {
+    "id": "20260318060105",
+    "name": "fine-tuning-guide",
+    "description": "大语言模型微调训练指南技能。",
+    "full_description": "介绍 LoRA、QLoRA 等高效微调方法，帮助在自定义数据集上微调开源模型，适配特定领域任务。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/fine-tuning-guide",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "模型微调",
+      "LoRA",
+      "AI 训练"
+    ]
+  },
+  {
+    "id": "20260318060106",
+    "name": "multi-modal-ai",
+    "description": "多模态 AI 应用开发技能。",
+    "full_description": "帮助构建结合文本、图像和音频的多模态 AI 应用，利用 GPT-4V、Claude Vision 等多模态模型能力。",
+    "category": "AI 工具",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/multi-modal-ai",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "多模态",
+      "计算机视觉",
+      "AI"
+    ]
+  },
+  {
+    "id": "20260318060107",
+    "name": "cloud-cost-optimizer",
+    "description": "云资源成本优化分析技能。",
+    "full_description": "分析云服务使用情况，识别过度配置资源，提供 RI 购买建议和架构优化方案，降低云计算支出。",
+    "category": "云计算",
+    "github_url": "https://github.com/zxkane/aws-skills/tree/main/skills/cloud-cost-optimizer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "云成本",
+      "FinOps",
+      "AWS"
+    ]
+  },
+  {
+    "id": "20260318060108",
+    "name": "network-security",
+    "description": "网络安全配置与漏洞防护技能。",
+    "full_description": "帮助配置防火墙规则、VPN 策略和网络访问控制，识别和修复常见网络安全漏洞和配置错误。",
+    "category": "安全",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/network-security",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "网络安全",
+      "防火墙",
+      "安全配置"
+    ]
+  },
+  {
+    "id": "20260318060109",
+    "name": "compliance-checker",
+    "description": "企业合规性检查与报告生成技能。",
+    "full_description": "帮助评估系统和流程是否符合 GDPR、SOC 2、ISO 27001 等合规标准，生成差距分析和整改报告。",
+    "category": "安全",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/compliance-checker",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "合规",
+      "GDPR",
+      "安全审计"
+    ]
+  },
+  {
+    "id": "20260318060110",
+    "name": "cloud-architecture-review",
+    "description": "云架构良好实践审查技能。",
+    "full_description": "基于 AWS Well-Architected Framework 对现有云架构进行全面评审，识别改进点并提供优化方案。",
+    "category": "云计算",
+    "github_url": "https://github.com/zxkane/aws-skills/tree/main/skills/cloud-architecture-review",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "云架构",
+      "AWS",
+      "架构审查"
+    ]
+  },
+  {
+    "id": "20260318060111",
+    "name": "devex-optimizer",
+    "description": "开发者体验优化与工具链提升技能。",
+    "full_description": "分析和改善开发者工具链、本地开发环境和反馈循环速度，提升团队整体开发效率和满意度。",
+    "category": "工程效率",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/devex-optimizer",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "开发者体验",
+      "工具链",
+      "工程效率"
+    ]
+  },
+  {
+    "id": "20260318060112",
+    "name": "figma-to-code",
+    "description": "将 Figma 设计稿转换为生产代码的技能。",
+    "full_description": "分析 Figma 设计规范和组件，生成对应的 React、Vue 或 HTML/CSS 代码，加速设计到开发的交付流程。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/figma-to-code",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 87,
+    "tags": [
+      "Figma",
+      "设计转代码",
+      "UI 开发"
+    ]
+  },
+  {
+    "id": "20260318060113",
+    "name": "dark-mode-implementation",
+    "description": "实现应用暗色模式的技能。",
+    "full_description": "帮助为 Web 应用添加暗色模式支持，包括 CSS 变量、系统偏好检测和用户手动切换功能。",
+    "category": "UI-UX",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/dark-mode-implementation",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "暗色模式",
+      "主题切换",
+      "CSS"
+    ]
+  },
+  {
+    "id": "20260318060114",
+    "name": "progressive-web-app",
+    "description": "构建渐进式 Web 应用（PWA）的技能。",
+    "full_description": "帮助为 Web 应用添加 PWA 能力，包括 Service Worker、离线缓存、推送通知和安装提示。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/progressive-web-app",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "PWA",
+      "离线缓存",
+      "Service Worker"
+    ]
+  },
+  {
+    "id": "20260318060115",
+    "name": "web3-development",
+    "description": "Web3 DApp 开发与智能合约集成技能。",
+    "full_description": "帮助构建 Web3 去中心化应用，集成 MetaMask、连接以太坊智能合约并处理链上交互。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/web3-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "Web3",
+      "区块链",
+      "以太坊"
+    ]
+  },
+  {
+    "id": "20260318060116",
+    "name": "devops-culture",
+    "description": "DevOps 文化建设与组织变革技能。",
+    "full_description": "帮助团队建立 DevOps 文化，推动开发与运维协作，引入自动化和持续改进的工程实践。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/devops-culture",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "DevOps",
+      "工程文化",
+      "组织变革"
+    ]
+  },
+  {
+    "id": "20260318060117",
+    "name": "chaos-engineering",
+    "description": "混沌工程实验设计与系统韧性验证技能。",
+    "full_description": "帮助设计和执行混沌工程实验，验证系统在故障条件下的韧性，提升生产环境的可靠性。",
+    "category": "DevOps",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/chaos-engineering",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "混沌工程",
+      "系统韧性",
+      "可靠性"
+    ]
+  },
+  {
+    "id": "20260318060118",
+    "name": "android-development",
+    "description": "Android 原生应用开发最佳实践技能。",
+    "full_description": "使用 Kotlin 和 Jetpack 组件构建高质量 Android 应用，涵盖 Compose UI、MVVM 架构和 Coroutines。",
+    "category": "移动开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/android-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "Android",
+      "Kotlin",
+      "移动开发"
+    ]
+  },
+  {
+    "id": "20260318060119",
+    "name": "ios-development",
+    "description": "iOS 原生应用开发最佳实践技能。",
+    "full_description": "使用 Swift 和 SwiftUI 构建高质量 iOS 应用，涵盖视图架构、数据流管理和 App Store 发布规范。",
+    "category": "移动开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/ios-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 83,
+    "tags": [
+      "iOS",
+      "Swift",
+      "SwiftUI"
+    ]
+  },
+  {
+    "id": "20260318060120",
+    "name": "flutter-development",
+    "description": "Flutter 跨平台应用开发技能。",
+    "full_description": "使用 Flutter 和 Dart 构建跨 iOS、Android 和 Web 平台的应用，涵盖 Widget 系统和状态管理。",
+    "category": "移动开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/flutter-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 84,
+    "tags": [
+      "Flutter",
+      "Dart",
+      "跨平台"
+    ]
+  },
+  {
+    "id": "20260318060121",
+    "name": "electron-desktop",
+    "description": "使用 Electron 构建跨平台桌面应用的技能。",
+    "full_description": "帮助使用 Electron 构建 Windows/macOS/Linux 桌面应用，涵盖主进程/渲染进程通信和原生 API 集成。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/electron-desktop",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "Electron",
+      "桌面应用",
+      "跨平台"
+    ]
+  },
+  {
+    "id": "20260318060122",
+    "name": "deno-runtime",
+    "description": "使用 Deno 运行时构建安全后端应用的技能。",
+    "full_description": "帮助使用 Deno 开发 TypeScript 优先的安全运行时环境，涵盖权限模型、标准库和 Fresh 框架。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/deno-runtime",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 79,
+    "tags": [
+      "Deno",
+      "TypeScript",
+      "后端开发"
+    ]
+  },
+  {
+    "id": "20260318060123",
+    "name": "bun-javascript",
+    "description": "使用 Bun 超快 JavaScript 运行时的技能。",
+    "full_description": "帮助使用 Bun 作为 JavaScript/TypeScript 运行时和包管理器，利用其超高性能提升开发体验。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/bun-javascript",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 79,
+    "tags": [
+      "Bun",
+      "JavaScript",
+      "性能"
+    ]
+  },
+  {
+    "id": "20260318060124",
+    "name": "astro-framework",
+    "description": "使用 Astro 构建高性能内容驱动网站的技能。",
+    "full_description": "帮助使用 Astro 框架构建极速加载的静态和服务端渲染网站，利用 Islands 架构实现选择性交互。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/astro-framework",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "Astro",
+      "静态站点",
+      "性能优化"
+    ]
+  },
+  {
+    "id": "20260318060125",
+    "name": "remix-fullstack",
+    "description": "Remix 全栈 Web 开发技能。",
+    "full_description": "帮助使用 Remix 框架构建嵌套路由、服务端数据加载和渐进增强的全栈 Web 应用。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/remix-fullstack",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "Remix",
+      "全栈",
+      "React"
+    ]
+  },
+  {
+    "id": "20260318060126",
+    "name": "solid-js",
+    "description": "使用 SolidJS 构建高性能响应式 UI 的技能。",
+    "full_description": "帮助使用 SolidJS 的细粒度响应式系统构建高性能前端，无虚拟 DOM 开销，接近原生 JavaScript 性能。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/solid-js",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 79,
+    "tags": [
+      "SolidJS",
+      "响应式",
+      "前端框架"
+    ]
+  },
+  {
+    "id": "20260318060127",
+    "name": "nuxt-development",
+    "description": "Nuxt 全栈 Vue 应用开发技能。",
+    "full_description": "帮助使用 Nuxt 3 构建服务端渲染的 Vue 应用，涵盖自动路由、服务端 API 和 Nitro 部署引擎。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/nuxt-development",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 81,
+    "tags": [
+      "Nuxt",
+      "Vue",
+      "全栈开发"
+    ]
+  },
+  {
+    "id": "20260318060128",
+    "name": "laravel-php",
+    "description": "Laravel PHP Web 框架开发最佳实践技能。",
+    "full_description": "帮助使用 Laravel 构建企业级 PHP Web 应用，涵盖 Eloquent ORM、队列系统和 Blade 模板引擎。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/laravel-php",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "Laravel",
+      "PHP",
+      "后端开发"
+    ]
+  },
+  {
+    "id": "20260318060129",
+    "name": "django-python",
+    "description": "Django Python Web 框架开发技能。",
+    "full_description": "帮助使用 Django 构建功能完整的 Web 应用，涵盖 ORM、Admin 后台、认证系统和 REST Framework。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/django-python",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "Django",
+      "Python",
+      "后端开发"
+    ]
+  },
+  {
+    "id": "20260318060130",
+    "name": "spring-boot",
+    "description": "Spring Boot Java 企业应用开发技能。",
+    "full_description": "帮助使用 Spring Boot 构建微服务和企业级 Java 应用，涵盖 Spring MVC、JPA、Security 和 Cloud。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/spring-boot",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "企业开发"
+    ]
+  },
+  {
+    "id": "20260318060131",
+    "name": "dotnet-backend",
+    "description": ".NET/C# 后端服务开发技能。",
+    "full_description": "帮助使用 ASP.NET Core 构建高性能 Web API 和微服务，涵盖 Entity Framework、Identity 和 Azure 集成。",
+    "category": "编程开发",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/dotnet-backend",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 80,
+    "tags": [
+      ".NET",
+      "C#",
+      "后端开发"
+    ]
+  },
+  {
+    "id": "20260318060132",
+    "name": "sql-optimization",
+    "description": "SQL 查询优化与数据库性能调优技能。",
+    "full_description": "分析慢查询、优化索引策略、重写复杂 SQL，显著提升数据库查询性能和系统响应速度。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/sql-optimization",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 86,
+    "tags": [
+      "SQL",
+      "数据库优化",
+      "性能调优"
+    ]
+  },
+  {
+    "id": "20260318060133",
+    "name": "mongodb-design",
+    "description": "MongoDB 文档数据库设计与查询优化技能。",
+    "full_description": "帮助设计高效的 MongoDB 数据模型，优化聚合管道查询，实现合理的索引策略和分片架构。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/mongodb-design",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "MongoDB",
+      "NoSQL",
+      "数据库设计"
+    ]
+  },
+  {
+    "id": "20260318060134",
+    "name": "elasticsearch-search",
+    "description": "Elasticsearch 全文搜索与数据分析技能。",
+    "full_description": "帮助配置 Elasticsearch 集群、设计索引映射和编写高效搜索查询，实现全文搜索和日志分析功能。",
+    "category": "数据库",
+    "github_url": "https://github.com/anthropics/skills/tree/main/skills/elasticsearch-search",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 82,
+    "tags": [
+      "Elasticsearch",
+      "全文搜索",
+      "日志分析"
+    ]
   }
 ]
