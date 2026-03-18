@@ -255,6 +255,23 @@
     ]
   },
   {
+    "id": "20260318060001",
+    "name": "marketingskills",
+    "description": "面向技术营销人和创始人的 AI 代理营销技能集合，覆盖转化率优化、SEO、文案写作等核心场景。",
+    "full_description": "包含 33 个专业营销技能文件，涵盖转化率优化（落地页、注册流、弹窗、支付墙）、SEO 审计与 AI 搜索优化、B2B 冷邮件与邮件序列、付费广告创意、分析追踪、增长工程（引荐计划、免费工具）、定价策略、销售赋能和收入运营等全链路营销场景。所有技能以 product-marketing-context 为统一上下文基础，彼此相互引用，适配 Claude Code、OpenAI Codex、Cursor、Windsurf 等主流 AI 编码代理。",
+    "category": "Agent",
+    "github_url": "https://github.com/coreyhaines31/marketingskills",
+    "version": null,
+    "stars": null,
+    "updated_at": null,
+    "recommendation_score": 85,
+    "tags": [
+      "营销自动化",
+      "转化率优化",
+      "SEO"
+    ]
+  },
+  {
     "id": "20260316040005",
     "name": "javascript-design-patterns",
     "description": "面向现代前端的 JavaScript 设计模式与架构模式精讲。",
