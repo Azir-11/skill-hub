@@ -7,15 +7,15 @@ description: 阿里云Supabase MCP服务器连接指南 - 用于查询和管理�
 
 ## 前置检查
 
-在使用此skill前，先检查MCP工具是否可用：
+在使用此 skill 前，先检查 MCP 工具是否可用：
 
 ```
 尝试调用 ToolSearch 搜索 "aliyun-supabase"
 ```
 
-**如果搜索结果为空或调用失败**，提示用户配置MCP服务器：
+**如果搜索结果为空或调用失败**，提示用户配置 MCP 服务器：
 
-> 未检测到阿里云Supabase MCP服务器，请先在 `~/.claude/settings.json` 或项目的 `.claude/settings.local.json` 中添加MCP配置：
+> 未检测到阿里云 Supabase MCP 服务器。请先自动识别当前 AI 运行环境支持的 MCP 配置位置（例如全局配置或项目本地配置），并在对应配置文件中添加 MCP 配置；不要假设固定路径或特定 Agent。
 >
 > ```json
 > {
@@ -42,7 +42,7 @@ description: 阿里云Supabase MCP服务器连接指南 - 用于查询和管理�
 >
 > 配置说明：
 > - `mcpServers` 的 key 是自定义名称，可随意命名
-> - `project-id`: 阿里云Supabase项目ID，可在控制台获取
+> - `project-id`: 阿里云 Supabase 项目 ID，可在控制台获取
 > - `region-id`: 项目所在区域，如 `cn-shenzhen`、`cn-hangzhou`
 > - `ALIYUN_ACCESS_TOKEN`: 阿里云访问令牌，格式为 `AccessKeyId|AccessKeySecret`
 
@@ -54,7 +54,7 @@ description: 阿里云Supabase MCP服务器连接指南 - 用于查询和管理�
 mcp__aliyun-supabase__list_aliyun_supabase_projects
 ```
 
-> 注意：工具名称中的 `aliyun-supabase` 取决于你在 `mcpServers` 中配置的key名称。如果配置为 `my-db`，则工具名称变为 `mcp__my-db__list_aliyun_supabase_projects`
+> 注意：工具名称中的 `aliyun-supabase` 取决于你在 `mcpServers` 中配置的 key 名称。如果配置为 `my-db`，则工具名称变为 `mcp__my-db__list_aliyun_supabase_projects`
 
 从返回结果中提取：
 - **projectId** - 项目ID
