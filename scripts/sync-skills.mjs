@@ -7,7 +7,7 @@ const GITHUB_API_BASE = "https://api.github.com";
 const GITHUB_WEB_BASE = "https://github.com";
 const SELF_REPO = "Azir-11/skill-hub";
 const SELF_REPO_BRANCH = "main";
-const SELF_SKILL_PATH_PREFIX = "data/skills";
+const SELF_SKILL_PATH_PREFIX = "skills";
 
 let hasLoggedRateLimitFallback = false;
 
