@@ -15,7 +15,7 @@ description: 阿里云Supabase MCP服务器连接指南 - 用于查询和管理�
 
 **如果搜索结果为空或调用失败**，提示用户配置 MCP 服务器：
 
-> 未检测到阿里云 Supabase MCP 服务器。请先自动识别当前 AI 运行环境支持的 MCP 配置位置（例如全局配置或项目本地配置），并在对应配置文件中添加 MCP 配置；不要假设固定路径或特定 Agent。
+> 未检测到阿里云 Supabase MCP 服务器。请先在 Agent 对应的配置文件中添加 MCP 配置，官方配置说明文档：https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/supabase-mcp-user-guide
 >
 > ```json
 > {
