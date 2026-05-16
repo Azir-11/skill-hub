@@ -26,7 +26,7 @@ export interface EnrichedSkill extends Skill {
 
 export const skills = skillsData as Skill[];
 
-export const SELF_REPO_BASE_URL = "https://github.com/Azir-11/skill-hub/tree/main/data/skills";
+export const SELF_REPO_BASE_URL = "https://github.com/Azir-11/skill-hub/tree/main/skills";
 
 export const isSelfSkill = (skill: Pick<Skill, "github_url">) => skill.github_url === "self";
 

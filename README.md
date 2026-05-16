@@ -27,6 +27,7 @@
 .
 ├── app/                  # App Router 页面与全局样式
 ├── components/           # 页面组件与基础 UI 组件
+├── skills/               # 本站提供的 skill 内容（每个子目录含 SKILL.md）
 ├── data/skills.json      # 技能卡片静态数据
 ├── lib/                  # 数据转换与通用工具
 ├── public/               # 静态资源
